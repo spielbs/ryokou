@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>貧困男爵 in マレーシア — 革命の灯火</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@300;400;700;900&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --pk:#ff2d78;--cy:#00f5ff;--gd:#ffd700;
+  --gn:#39ff14;--or:#ff6b00;
+  --dk:#080810;--dk2:#0e0e1c;--dk3:#14142a;
+  --tx:#f0f0f8;--mu:#7878a0;
+  --pad:clamp(16px,5vw,60px);
+  --max:1100px;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Noto Sans JP',sans-serif;background:var(--dk);color:var(--tx);overflow-x:hidden;line-height:1.6;}
+img{display:block;width:100%;height:100%;object-fit:cover;}
+
+/* ═══ HERO ═══ */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 60% at 15% 50%,rgba(255,45,120,.28) 0%,transparent 70%),
+  radial-gradient(ellipse 60% 50% at 85% 25%,rgba(0,245,255,.18) 0%,transparent 70%),
+  radial-gradient(ellipse 50% 40% at 50% 85%,rgba(255,107,0,.15) 0%,transparent 70%),
+  linear-gradient(160deg,#06061a 0%,#0e0e28 60%,#060614 100%);}
+.hero-bg::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.1) 2px,rgba(0,0,0,.1) 4px);pointer-events:none;}
+.hero-photo{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=1600&q=80') center/cover no-repeat;opacity:.2;mix-blend-mode:screen;}
+.hero-tr{position:absolute;top:20px;right:20px;width:70px;height:70px;border-top:2px solid var(--cy);border-right:2px solid var(--cy);opacity:.4;}
+.hero-bl{position:absolute;bottom:20px;left:20px;width:50px;height:50px;border-bottom:2px solid var(--pk);border-left:2px solid var(--pk);opacity:.3;}
+.hero-inner{position:relative;z-index:2;padding:clamp(28px,7vw,80px) var(--pad) clamp(100px,15vw,160px);max-width:var(--max);margin:0 auto;width:100%;}
+.hero-eye{font-family:'DM Mono',monospace;font-size:clamp(9px,1.8vw,11px);letter-spacing:clamp(2px,.5vw,4px);color:var(--cy);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+.hero-eye::before{content:'';display:inline-block;width:28px;height:1px;background:var(--cy);}
+.hero-h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(52px,14vw,140px);line-height:.88;letter-spacing:-1px;color:#fff;text-shadow:0 0 24px rgba(255,45,120,.7),0 0 80px rgba(255,45,120,.3);margin-bottom:10px;}
+.hero-h1 .pk{color:var(--pk);text-shadow:0 0 12px var(--pk),0 0 40px rgba(255,45,120,.6);}
+.hero-sub-row{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+.hero-sub-line{height:2px;width:clamp(24px,4vw,50px);background:linear-gradient(90deg,var(--cy),transparent);flex-shrink:0;}
+.hero-subtitle{font-family:'Bebas Neue',sans-serif;font-size:clamp(16px,4.5vw,36px);letter-spacing:clamp(3px,1vw,8px);color:var(--cy);text-shadow:0 0 20px var(--cy);}
+.hero-tag{font-size:clamp(10px,2vw,13px);color:rgba(255,255,255,.5);letter-spacing:1px;margin-bottom:clamp(20px,4vw,36px);}
+.route-bar{display:flex;flex-wrap:wrap;gap:5px;align-items:center;}
+.rb{font-family:'DM Mono',monospace;font-size:clamp(9px,1.8vw,11px);letter-spacing:.5px;padding:5px clamp(7px,2vw,14px);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:4px;white-space:nowrap;}
+.rb.kl{border-color:rgba(0,245,255,.5);color:var(--cy);}
+.rb.ml{border-color:rgba(255,107,0,.5);color:var(--or);}
+.rb.pe{border-color:rgba(57,255,20,.5);color:var(--gn);}
+.rb-a{color:var(--mu);font-size:13px;}
+.hero-stats{position:absolute;bottom:clamp(14px,4vw,36px);right:var(--pad);display:flex;gap:clamp(14px,3vw,30px);z-index:2;}
+.st-n{font-family:'Bebas Neue',sans-serif;font-size:clamp(24px,5.5vw,44px);line-height:1;}
+.st-u{color:var(--gd);font-size:clamp(10px,1.5vw,13px);}
+.st-l{font-family:'DM Mono',monospace;font-size:clamp(7px,1.2vw,10px);letter-spacing:2px;color:var(--mu);text-transform:uppercase;}
+
+/* ═══ DIVIDER ═══ */
+.ndiv{height:1px;background:linear-gradient(90deg,transparent,var(--pk) 20%,var(--cy) 50%,var(--gn) 80%,transparent);opacity:.35;}
+
+/* ═══ SECTION ═══ */
+.sec{padding:clamp(36px,6vw,72px) var(--pad);}
+.sec.alt{background:var(--dk2);}
+.si{max-width:var(--max);margin:0 auto;}
+.shd{display:flex;align-items:flex-end;gap:14px;margin-bottom:clamp(22px,4vw,38px);padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.07);}
+.shd-n{font-family:'Bebas Neue',sans-serif;font-size:clamp(44px,8vw,86px);line-height:1;color:rgba(255,255,255,.04);letter-spacing:-4px;margin-bottom:-4px;}
+.shd-lbl{font-family:'DM Mono',monospace;font-size:clamp(9px,1.2vw,10px);letter-spacing:3px;text-transform:uppercase;margin-bottom:4px;}
+.shd-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(22px,4vw,38px);letter-spacing:2px;line-height:1;}
+
+/* ═══ SPOT MOSAIC ═══ */
+.mosaic{display:grid;gap:3px;grid-template-columns:repeat(12,1fr);grid-template-rows:300px 210px 210px;}
+.ms1{grid-column:1/7;grid-row:1/2;}
+.ms2{grid-column:7/10;grid-row:1/2;}
+.ms3{grid-column:10/13;grid-row:1/2;}
+.ms4{grid-column:1/5;grid-row:2/3;}
+.ms5{grid-column:5/9;grid-row:2/3;}
+.ms6{grid-column:9/13;grid-row:2/3;}
+.ms7{grid-column:1/4;grid-row:3/4;}
+.ms8{grid-column:4/8;grid-row:3/4;}
+.ms9{grid-column:8/13;grid-row:3/4;}
+.mc{position:relative;overflow:hidden;background:var(--dk3);cursor:pointer;}
+.mc img{transition:transform .6s ease,filter .4s ease;filter:brightness(.6) saturate(1.2);}
+.mc:hover img{transform:scale(1.07);filter:brightness(.78) saturate(1.5);}
+.mc::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(4,4,18,.95) 0%,rgba(4,4,18,.25) 55%,transparent 100%);}
+.mc-body{position:absolute;bottom:0;left:0;right:0;padding:clamp(10px,2vw,18px);z-index:1;}
+.mc-badge{display:inline-block;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;padding:3px 8px;border-radius:2px;border:1px solid currentColor;margin-bottom:6px;}
+.b-req{color:#ff7070;border-color:#ff7070;}
+.b-free{color:var(--gn);border-color:var(--gn);}
+.b-cas{color:var(--gd);border-color:var(--gd);}
+.b-res{color:var(--cy);border-color:var(--cy);}
+.mc-name{font-family:'Bebas Neue',sans-serif;font-size:clamp(14px,2.2vw,24px);letter-spacing:2px;line-height:1.1;margin-bottom:2px;color:#fff;}
+.mc-loc{font-family:'DM Mono',monospace;font-size:clamp(8px,1.1vw,10px);color:var(--mu);letter-spacing:1px;margin-bottom:4px;}
+.mc-note{font-size:clamp(10px,1.4vw,12px);color:rgba(255,255,255,.72);line-height:1.5;display:none;}
+.ms1 .mc-note{display:block;}
+.mc-price{font-family:'DM Mono',monospace;font-size:clamp(9px,1.3vw,11px);color:var(--gd);margin-top:4px;}
+.mc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;z-index:2;transform:scaleX(0);transform-origin:left;transition:transform .4s ease;}
+.mc:hover::before{transform:scaleX(1);}
+.ap::before{background:var(--pk);box-shadow:0 0 8px var(--pk);}
+.ac::before{background:var(--cy);box-shadow:0 0 8px var(--cy);}
+.ag::before{background:var(--gd);box-shadow:0 0 8px var(--gd);}
+.an::before{background:var(--gn);box-shadow:0 0 8px var(--gn);}
+.ao::before{background:var(--or);box-shadow:0 0 8px var(--or);}
+
+/* ═══ CITY STRIPS ═══ */
+.city{margin-bottom:clamp(36px,5vw,60px);}
+.city-lbl{display:flex;align-items:baseline;gap:12px;margin-bottom:10px;flex-wrap:wrap;}
+.city-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-bottom:2px;}
+.city-name{font-family:'Bebas Neue',sans-serif;font-size:clamp(18px,3vw,26px);letter-spacing:3px;}
+.city-desc{font-family:'DM Mono',monospace;font-size:clamp(9px,1.3vw,10px);color:var(--mu);letter-spacing:1px;}
+.city-photos{display:grid;gap:3px;}
+.cp3{grid-template-columns:2fr 1fr 1fr;}
+.cp4{grid-template-columns:3fr 1fr 1fr 1fr;}
+.cp5{grid-template-columns:2fr 1fr 1fr 1fr 1fr;}
+.cph{overflow:hidden;background:var(--dk3);position:relative;height:clamp(140px,25vw,260px);}
+.cph img{transition:transform .5s;}
+.cph:hover img{transform:scale(1.06);}
+.cph-lbl{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(4,4,18,.85));padding:22px 12px 8px;font-size:clamp(9px,1.3vw,11px);color:rgba(255,255,255,.75);font-family:'DM Mono',monospace;letter-spacing:.5px;}
+
+/* ═══ SCHEDULE ═══ */
+.sw{background:var(--dk2);}
+.sw-hd{max-width:var(--max);margin:0 auto;padding:clamp(36px,6vw,64px) var(--pad) clamp(20px,3vw,32px);}
+.sw-leg{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:clamp(18px,3vw,26px);}
+.db{max-width:var(--max);margin:0 auto;padding:0 var(--pad);display:grid;grid-template-columns:clamp(110px,17vw,190px) 1fr;border-bottom:1px solid rgba(255,255,255,.04);}
+.dl{padding:clamp(14px,2.5vw,26px) clamp(14px,2vw,28px) clamp(14px,2.5vw,26px) 0;border-right:1px solid rgba(255,255,255,.06);position:sticky;top:0;align-self:start;}
+.dn{font-family:'Bebas Neue',sans-serif;font-size:clamp(44px,8vw,68px);line-height:1;letter-spacing:-2px;margin-bottom:2px;}
+.dd{font-family:'DM Mono',monospace;font-size:clamp(8px,1.4vw,11px);letter-spacing:1px;margin-bottom:5px;}
+.ds{font-size:clamp(9px,1.3vw,11px);color:var(--mu);line-height:1.5;}
+.dv{margin-top:9px;font-family:'Bebas Neue',sans-serif;font-size:clamp(8px,1.2vw,11px);letter-spacing:2px;padding:3px 7px;border-radius:2px;display:inline-block;}
+.dr{padding:clamp(10px,2vw,26px) 0 clamp(10px,2vw,26px) clamp(14px,2vw,28px);}
+.it{display:grid;grid-template-columns:8px clamp(60px,10vw,96px) 1fr;gap:0 clamp(7px,1.2vw,12px);padding:clamp(7px,1.2vw,10px) 0;border-bottom:1px solid rgba(255,255,255,.03);align-items:start;}
+.it:last-child{border-bottom:none;}
+.it-bar{width:2px;border-radius:1px;align-self:stretch;min-height:16px;margin-top:4px;}
+.it-t{font-family:'DM Mono',monospace;font-size:clamp(8px,1.2vw,11px);color:var(--mu);padding-top:4px;font-style:italic;}
+.it-tags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:4px;}
+.itg{font-size:clamp(7px,1.1vw,9px);font-family:'DM Mono',monospace;letter-spacing:1px;text-transform:uppercase;padding:2px 6px;border-radius:2px;}
+.ir{background:rgba(255,107,107,.12);color:#ff7070;border:1px solid rgba(255,107,107,.3);}
+.if{background:rgba(57,255,20,.08);color:var(--gn);border:1px solid rgba(57,255,20,.25);}
+.im{background:rgba(0,245,255,.08);color:var(--cy);border:1px solid rgba(0,245,255,.25);}
+.ic{background:rgba(255,215,0,.08);color:var(--gd);border:1px solid rgba(255,215,0,.25);}
+.io{background:rgba(56,189,248,.08);color:#7dd3fc;border:1px solid rgba(56,189,248,.25);}
+.ig{background:rgba(255,107,0,.1);color:var(--or);border:1px solid rgba(255,107,0,.28);}
+.it-h{font-size:clamp(11px,1.8vw,14px);font-weight:700;color:#fff;margin-bottom:2px;line-height:1.3;}
+.it-h.ch{color:var(--gn);}
+.it-d{font-size:clamp(10px,1.5vw,12px);color:var(--mu);line-height:1.7;white-space:pre-line;}
+
+/* day colors */
+.cpk .dn,.cpk .dd{color:var(--pk);}
+.cpk .dn{text-shadow:0 0 24px rgba(255,45,120,.5);}
+.cpk .it-bar{background:var(--pk);}
+.cpk .dv{background:rgba(255,45,120,.12);color:var(--pk);}
+.ccy .dn,.ccy .dd{color:var(--cy);}
+.ccy .dn{text-shadow:0 0 24px rgba(0,245,255,.5);}
+.ccy .it-bar{background:var(--cy);}
+.ccy .dv{background:rgba(0,245,255,.1);color:var(--cy);}
+.cgd .dn,.cgd .dd{color:var(--gd);}
+.cgd .dn{text-shadow:0 0 24px rgba(255,215,0,.5);}
+.cgd .it-bar{background:var(--gd);}
+.cgd .dv{background:rgba(255,215,0,.1);color:var(--gd);}
+.cgn .dn,.cgn .dd{color:var(--gn);}
+.cgn .dn{text-shadow:0 0 24px rgba(57,255,20,.5);}
+.cgn .it-bar{background:var(--gn);}
+.cgn .dv{background:rgba(57,255,20,.08);color:var(--gn);}
+.coc .dn,.coc .dd{color:#7dd3fc;}
+.coc .dn{text-shadow:0 0 24px rgba(125,211,252,.5);}
+.coc .it-bar{background:#7dd3fc;}
+.coc .dv{background:rgba(125,211,252,.08);color:#7dd3fc;}
+.cor .dn,.cor .dd{color:var(--or);}
+.cor .dn{text-shadow:0 0 24px rgba(255,107,0,.5);}
+.cor .it-bar{background:var(--or);}
+.cor .dv{background:rgba(255,107,0,.1);color:var(--or);}
+
+/* ═══ APPS & CHECKLIST ═══ */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,4vw,36px);}
+.ptitle{font-family:'Bebas Neue',sans-serif;font-size:clamp(18px,3vw,24px);letter-spacing:3px;margin-bottom:13px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,.07);}
+.app-list{display:flex;flex-direction:column;gap:2px;}
+.app{display:grid;grid-template-columns:50px 1fr;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);overflow:hidden;transition:border-color .2s;}
+.app:hover{border-color:rgba(0,245,255,.3);}
+.app-ic{display:flex;align-items:center;justify-content:center;font-size:20px;background:rgba(255,255,255,.03);border-right:1px solid rgba(255,255,255,.05);}
+.app-bd{padding:9px 11px;}
+.app-n{font-weight:700;font-size:clamp(11px,1.8vw,13px);color:#fff;margin-bottom:2px;}
+.app-d{font-size:clamp(10px,1.5vw,12px);color:var(--mu);line-height:1.5;}
+.app-w{font-size:9px;font-family:'DM Mono',monospace;color:var(--cy);letter-spacing:1px;margin-top:3px;text-transform:uppercase;}
+.ckg{display:grid;grid-template-columns:1fr 1fr;gap:2px;}
+.ck{display:flex;gap:8px;align-items:flex-start;padding:8px 10px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.05);transition:all .2s;}
+.ck:hover{background:rgba(57,255,20,.04);border-color:rgba(57,255,20,.2);}
+.ck-box{width:13px;height:13px;border:1px solid var(--gn);border-radius:2px;flex-shrink:0;margin-top:3px;}
+.ck-em{font-size:14px;flex-shrink:0;}
+.ck-m{font-size:clamp(10px,1.6vw,12px);font-weight:700;color:#fff;line-height:1.3;}
+.ck-s{font-size:clamp(9px,1.3vw,10.5px);color:var(--mu);}
+
+/* ═══ TRANSPORT ═══ */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.tbl{width:100%;border-collapse:collapse;font-size:clamp(10.5px,1.6vw,12.5px);min-width:500px;}
+.tbl th{background:rgba(255,255,255,.04);color:var(--mu);padding:9px 13px;text-align:left;font-family:'DM Mono',monospace;font-size:clamp(8px,1.1vw,10px);letter-spacing:2px;text-transform:uppercase;font-weight:400;border-bottom:1px solid rgba(255,255,255,.08);}
+.tbl td{padding:9px 13px;border-bottom:1px solid rgba(255,255,255,.04);color:rgba(255,255,255,.8);}
+.tbl tr:hover td{background:rgba(255,255,255,.02);}
+.trm{font-family:'DM Mono',monospace;color:var(--gd);font-weight:500;}
+.tjy{font-family:'DM Mono',monospace;color:var(--mu);font-size:clamp(9px,1.3vw,11px);}
+.tap{font-size:clamp(9px,1.3vw,11px);color:var(--cy);}
+
+/* ═══ BUDGET ═══ */
+.bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;}
+.bc{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);padding:clamp(12px,2.5vw,20px) clamp(12px,2vw,20px);position:relative;overflow:hidden;}
+.bc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;}
+.bpk::before{background:var(--pk);}
+.bcy::before{background:var(--cy);}
+.bgn::before{background:var(--gn);}
+.bgd::before{background:var(--gd);}
+.bor::before{background:var(--or);}
+.btot{background:rgba(255,215,0,.05);border-color:rgba(255,215,0,.25);}
+.btot::before{background:var(--gd);}
+.bc-lb{font-size:clamp(8px,1.3vw,11px);font-family:'DM Mono',monospace;color:var(--mu);letter-spacing:.5px;margin-bottom:5px;}
+.bc-v{font-family:'Bebas Neue',sans-serif;font-size:clamp(22px,4vw,36px);line-height:1;margin-bottom:3px;}
+.btot .bc-v{color:var(--gd);text-shadow:0 0 20px rgba(255,215,0,.4);}
+.bc-s{font-size:clamp(9px,1.4vw,11px);color:var(--mu);}
+
+/* ═══ NOTES ═══ */
+.notes{display:flex;flex-direction:column;gap:4px;}
+.note{display:flex;gap:clamp(8px,1.5vw,14px);align-items:flex-start;padding:clamp(9px,1.8vw,13px) clamp(11px,1.8vw,17px);border-left:3px solid currentColor;font-size:clamp(11px,1.7vw,13px);line-height:1.6;}
+.nu{background:rgba(255,45,120,.05);color:var(--pk);}
+.nw{background:rgba(255,215,0,.04);color:var(--gd);}
+.nt{background:rgba(57,255,20,.04);color:var(--gn);}
+.ni{background:rgba(0,245,255,.04);color:var(--cy);}
+.n-badge{font-family:'DM Mono',monospace;font-size:clamp(8px,1.2vw,10px);letter-spacing:1px;white-space:nowrap;margin-top:3px;font-weight:500;}
+.n-txt{color:rgba(255,255,255,.75);}
+.n-txt strong{color:#fff;}
+
+/* ═══ FOOTER ═══ */
+.footer{background:var(--dk);border-top:1px solid rgba(255,255,255,.06);padding:clamp(28px,5vw,52px) var(--pad);text-align:center;position:relative;overflow:hidden;}
+.footer::before{content:'貧困男爵';position:absolute;font-family:'Bebas Neue',sans-serif;font-size:clamp(60px,16vw,200px);color:rgba(255,255,255,.012);top:50%;left:50%;transform:translate(-50%,-50%);letter-spacing:-4px;white-space:nowrap;pointer-events:none;}
+.footer-t{font-family:'Bebas Neue',sans-serif;font-size:clamp(16px,3vw,26px);letter-spacing:clamp(2px,1vw,6px);color:var(--pk);text-shadow:0 0 20px rgba(255,45,120,.5);margin-bottom:8px;}
+.footer-s{font-size:clamp(9px,1.5vw,12px);color:var(--mu);letter-spacing:clamp(1px,.5vw,2px);font-family:'DM Mono',monospace;}
+
+/* ═══ RESPONSIVE MOBILE ≤640px ═══ */
+@media(max-width:640px){
+  .hero-stats{position:static;padding:0 var(--pad) 20px;justify-content:flex-start;}
+  .hero-inner{padding-bottom:20px;}
+  .mosaic{grid-template-columns:1fr 1fr;grid-template-rows:auto;}
+  .ms1{grid-column:1/3;grid-row:auto;aspect-ratio:16/9;}
+  .ms2,.ms3,.ms4,.ms5,.ms6,.ms7,.ms8,.ms9{grid-column:auto;grid-row:auto;aspect-ratio:1/1;}
+  .ms1 .mc-note{font-size:11px;}
+  .cp3,.cp4,.cp5{grid-template-columns:1fr 1fr;}
+  .cph{height:clamp(110px,32vw,170px);}
+  .cph:first-child{grid-column:1/3;}
+  .db{grid-template-columns:1fr;}
+  .dl{border-right:none;border-bottom:1px solid rgba(255,255,255,.06);position:static;padding:14px 0 10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .dn{font-size:clamp(40px,10vw,52px);margin-bottom:0;}
+  .dv{margin-top:0;}
+  .dr{padding:10px 0 16px;}
+  .it{grid-template-columns:7px clamp(52px,16vw,72px) 1fr;gap:0 7px;}
+  .two-col{grid-template-columns:1fr;}
+  .ckg{grid-template-columns:1fr;}
+  .bgrid{grid-template-columns:1fr 1fr;}
+  .note{flex-direction:column;gap:3px;}
+}
+
+/* ═══ TABLET 641–900px ═══ */
+@media(min-width:641px) and (max-width:900px){
+  .mosaic{grid-template-columns:repeat(6,1fr);grid-template-rows:240px 190px 190px;}
+  .ms1{grid-column:1/4;grid-row:1/2;}
+  .ms2{grid-column:4/7;grid-row:1/2;}
+  .ms3{grid-column:1/3;grid-row:2/3;}
+  .ms4{grid-column:3/5;grid-row:2/3;}
+  .ms5{grid-column:5/7;grid-row:2/3;}
+  .ms6{grid-column:1/3;grid-row:3/4;}
+  .ms7{grid-column:3/5;grid-row:3/4;}
+  .ms8{grid-column:5/7;grid-row:3/4;}
+  .ms9{display:none;}
+  .cp4,.cp5{grid-template-columns:2fr 1fr 1fr;}
+  .cph:nth-child(n+4){display:none;}
+  .two-col{grid-template-columns:1fr;}
+  .ckg{grid-template-columns:1fr 1fr;}
+}
+
+@media print{body{background:#fff;color:#000;}.hero{background:#0a0a1e;}}
+</style>
+</head>
+<body>
+
+<!-- ═══ HERO ═══ -->
+<div class="hero">
+  <div class="hero-bg"></div><div class="hero-photo"></div>
+  <div class="hero-tr"></div><div class="hero-bl"></div>
+  <div class="hero-inner">
+    <div class="hero-eye">SPECIAL ISSUE — MEN'S TRAVEL MAGAZINE — 2026.05</div>
+    <h1 class="hero-h1">貧困<span class="pk">男爵</span><br>in Malaysia</h1>
+    <div class="hero-sub-row"><div class="hero-sub-line"></div><div class="hero-subtitle">革命の灯火</div></div>
+    <p class="hero-tag">カジノ · ビーチ · 遺跡 · 夜遊び · 筋トレ — 4/30 深夜 成田 発 → 5/8 帰還</p>
+    <div class="route-bar">
+      <span class="rb">✈ 成田 4/30深夜</span><span class="rb-a">›</span>
+      <span class="rb kl">🏙 KL 3泊</span><span class="rb-a">›</span>
+      <span class="rb ml">🕌 マラッカ 1泊</span><span class="rb-a">›</span>
+      <span class="rb pe">🏖 ペナン 2泊</span><span class="rb-a">›</span>
+      <span class="rb">✈ 成田 5/8</span>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div><div class="st-n">7<span class="st-u">泊</span></div><div class="st-l">NIGHTS</div></div>
+    <div><div class="st-n">4<span class="st-u">人</span></div><div class="st-l">CREW</div></div>
+    <div><div class="st-n">13<span class="st-u">か所</span></div><div class="st-l">SPOTS</div></div>
+  </div>
+</div>
+
+<div class="ndiv"></div>
+
+<!-- ═══ SPOT MOSAIC ═══ -->
+<div class="sec">
+<div class="si">
+  <div class="shd">
+    <div class="shd-n">01</div>
+    <div><div class="shd-lbl" style="color:var(--pk)">DESTINATIONS</div><div class="shd-title">行くぞ。13か所の戦場。</div></div>
+  </div>
+  <div class="mosaic">
+    <div class="mc ms1 ac"><img src="https://images.unsplash.com/photo-1565534670430-df97f75a4b37?w=900&q=80" alt="スカイミラー" loading="lazy"><div class="mc-body"><span class="mc-badge b-req">● 要事前予約</span><div class="mc-name">🌊 スカイミラー</div><div class="mc-loc">Kuala Selangor — KLから車1.5h</div><div class="mc-note">満月直後の5/2〜3がベスト。砂州に張った水面が空を完璧に映す。今回最大のハイライト。</div><div class="mc-price">RM90 ≒ ¥3,060 / 人 · skymirrortour.com</div></div></div>
+    <div class="mc ms2 ag"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80" alt="ゲンティン" loading="lazy"><div class="mc-body"><span class="mc-badge b-cas">● カジノ 24H</span><div class="mc-name">🎰 ゲンティン</div><div class="mc-loc">Pahang — 標高1800m</div><div class="mc-price">ロープウェイ RM20 · カジノ無料</div></div></div>
+    <div class="mc ms3 ap"><img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=600&q=80" alt="KL夜景" loading="lazy"><div class="mc-body"><span class="mc-badge b-free">● KL CITY</span><div class="mc-name">🏙 クアラルンプール</div><div class="mc-loc">Federal Territory</div><div class="mc-price">ペトロナスタワー · 夜の街</div></div></div>
+    <div class="mc ms4 ag"><img src="https://images.unsplash.com/photo-1601925228008-6ca20f37c12f?w=600&q=80" alt="バトゥ洞窟" loading="lazy"><div class="mc-body"><span class="mc-badge b-free">● 入場無料</span><div class="mc-name">🦁 バトゥ洞窟</div><div class="mc-loc">Gombak, KL</div><div class="mc-price">電車 RM4 ≒ ¥140</div></div></div>
+    <div class="mc ms5 ac"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Masjid_Sultan_Salahuddin_Abdul_Aziz_Shah.jpg/640px-Masjid_Sultan_Salahuddin_Abdul_Aziz_Shah.jpg" alt="ブルーモスク" loading="lazy"><div class="mc-body"><span class="mc-badge b-free">● 入場無料</span><div class="mc-name">💙 ブルーモスク</div><div class="mc-loc">Shah Alam</div><div class="mc-price">世界最大級の青いドーム</div></div></div>
+    <div class="mc ms6 ap"><img src="https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?w=600&q=80" alt="ピンクモスク" loading="lazy"><div class="mc-body"><span class="mc-badge b-free">● 入場無料</span><div class="mc-name">🌸 ピンクモスク</div><div class="mc-loc">Putrajaya</div><div class="mc-price">湖畔の幻想的なドーム</div></div></div>
+    <div class="mc ms7 ao"><img src="https://images.unsplash.com/photo-1581540222194-0def2dda95b8?w=600&q=80" alt="マラッカ海峡モスク" loading="lazy"><div class="mc-body"><span class="mc-badge b-free">● 入場無料</span><div class="mc-name">🕌 マラッカ<br>海峡モスク</div><div class="mc-loc">Melaka</div></div></div>
+    <div class="mc ms8 an"><img src="https://images.unsplash.com/photo-1549571865-88c2ae24a1cf?w=600&q=80" alt="ジョージタウン" loading="lazy"><div class="mc-body"><span class="mc-badge b-free">● UNESCO</span><div class="mc-name">🏛 ジョージタウン</div><div class="mc-loc">Penang Island</div><div class="mc-price">ストリートアート · 旧市街 · 徒歩で制覇</div></div></div>
+    <div class="mc ms9 ac"><img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80" alt="バトゥフェリンギ" loading="lazy"><div class="mc-body"><span class="mc-badge b-res">● リゾートDAY</span><div class="mc-name">🏖 バトゥフェリンギ</div><div class="mc-loc">Penang North</div><div class="mc-price">ジェットスキー · シュノーケル · 昼寝</div></div></div>
+  </div>
+</div>
+</div>
+
+<div class="ndiv"></div>
+
+<!-- ═══ CITY PHOTO STRIPS ═══ -->
+<div class="sec alt">
+<div class="si">
+  <div class="shd">
+    <div class="shd-n">02</div>
+    <div><div class="shd-lbl" style="color:var(--cy)">PHOTO GUIDE</div><div class="shd-title">エリア別 リアル写真ガイド</div></div>
+  </div>
+
+  <!-- KL -->
+  <div class="city">
+    <div class="city-lbl">
+      <div class="city-dot" style="background:var(--cy)"></div>
+      <div class="city-name" style="color:var(--cy)">KUALA LUMPUR</div>
+      <div class="city-desc">Day 2〜4 · 3泊 · モスク・洞窟・カジノ・市内観光</div>
+    </div>
+    <div class="city-photos cp5">
+      <div class="cph"><img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=700&q=80" alt="KL夜景" loading="lazy"><div class="cph-lbl">🌃 KLスカイライン · ペトロナスタワー</div></div>
+      <div class="cph"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=400&q=80" alt="ゲンティン" loading="lazy"><div class="cph-lbl">🎰 ゲンティン天空カジノ</div></div>
+      <div class="cph"><img src="https://images.unsplash.com/photo-1601925228008-6ca20f37c12f?w=400&q=80" alt="バトゥ洞窟" loading="lazy"><div class="cph-lbl">🦁 バトゥ洞窟272段</div></div>
+      <div class="cph"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Masjid_Sultan_Salahuddin_Abdul_Aziz_Shah.jpg/640px-Masjid_Sultan_Salahuddin_Abdul_Aziz_Shah.jpg" alt="ブルーモスク" loading="lazy"><div class="cph-lbl">💙 ブルーモスク</div></div>
+      <div class="cph"><img src="https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?w=400&q=80" alt="ピンクモスク" loading="lazy"><div class="cph-lbl">🌸 ピンクモスク</div></div>
+    </div>
+  </div>
+
+  <!-- KL 追加スポット -->
+  <div class="city">
+    <div class="city-lbl">
+      <div class="city-dot" style="background:var(--gd)"></div>
+      <div class="city-name" style="color:var(--gd)">KL — 追加スポット候補</div>
+      <div class="city-desc">Day 4（KL3日目）の自由時間に回れる穴場・名所</div>
+    </div>
+    <div class="city-photos cp4">
+      <div class="cph"><img src="https://images.unsplash.com/photo-1565534670430-df97f75a4b37?w=700&q=80" alt="天后宮イメージ" loading="lazy"><div class="cph-lbl">🏯 天后宮（Thean Hou Temple）· 中国系6層廟</div></div>
+      <div class="cph"><img src="https://images.unsplash.com/photo-1588421357574-87938a86fa28?w=400&q=80" alt="ムルデカ広場" loading="lazy"><div class="cph-lbl">🏟 ムルデカ広場 · 独立記念の地</div></div>
+      <div class="cph"><img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=400&q=80" alt="セントラルマーケット" loading="lazy"><div class="cph-lbl">🛍 セントラル・マーケット · 雑貨・土産</div></div>
+      <div class="cph"><img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=400&q=80" alt="ペルダナ植物園" loading="lazy"><div class="cph-lbl">🌿 ペルダナ植物園 · KLCCの緑のオアシス</div></div>
+    </div>
+  </div>
+
+  <!-- SKY MIRROR -->
+  <div class="city">
+    <div class="city-lbl">
+      <div class="city-dot" style="background:var(--cy)"></div>
+      <div class="city-name" style="color:var(--cy)">SKY MIRROR ⭐</div>
+      <div class="city-desc">Day 2か3 · 満月5/2直後 · 今回最大のハイライト</div>
+    </div>
+    <div class="city-photos cp3">
+      <div class="cph"><img src="https://images.unsplash.com/photo-1565534670430-df97f75a4b37?w=700&q=80" alt="スカイミラー" loading="lazy"><div class="cph-lbl">🌊 スカイミラー — 干潮時のみ現れる鏡の世界</div></div>
+      <div class="cph"><img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=400&q=80" alt="海岸" loading="lazy"><div class="cph-lbl">クアラスランゴール海岸</div></div>
+      <div class="cph"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80" alt="マレーシア海" loading="lazy"><div class="cph-lbl">ボートで約30分の沖合</div></div>
+    </div>
+  </div>
+
+  <!-- MALACCA -->
+  <div class="city">
+    <div class="city-lbl">
+      <div class="city-dot" style="background:var(--or)"></div>
+      <div class="city-name" style="color:var(--or)">MALACCA</div>
+      <div class="city-desc">Day 5 · 1泊 · UNESCO世界遺産 · 海峡モスク · 旧市街</div>
+    </div>
+    <div class="city-photos cp4">
+      <div class="cph"><img src="https://images.unsplash.com/photo-1581540222194-0def2dda95b8?w=700&q=80" alt="マラッカ海峡モスク" loading="lazy"><div class="cph-lbl">🕌 マラッカ海峡モスク — 海に浮かぶ絶景</div></div>
+      <div class="cph"><img src="https://images.unsplash.com/photo-1588421357574-87938a86fa28?w=400&q=80" alt="マラッカ旧市街" loading="lazy"><div class="cph-lbl">オランダ広場 · 赤い建物</div></div>
+      <div class="cph"><img src="https://images.unsplash.com/photo-1518639192441-8fce0a366e2e?w=400&q=80" alt="マラッカ川" loading="lazy"><div class="cph-lbl">マラッカ川クルーズ（夜）</div></div>
+      <div class="cph"><img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=400&q=80" alt="ジョンカーストリート" loading="lazy"><div class="cph-lbl">ジョンカーストリート</div></div>
+    </div>
+  </div>
+
+  <!-- PENANG -->
+  <div class="city">
+    <div class="city-lbl">
+      <div class="city-dot" style="background:var(--gn)"></div>
+      <div class="city-name" style="color:var(--gn)">PENANG</div>
+      <div class="city-desc">Day 6〜7 · 2泊 · ジョージタウン + リゾートday</div>
+    </div>
+    <div class="city-photos cp4">
+      <div class="cph"><img src="https://images.unsplash.com/photo-1549571865-88c2ae24a1cf?w=700&q=80" alt="ジョージタウン" loading="lazy"><div class="cph-lbl">🏛 ジョージタウン ストリートアート</div></div>
+      <div class="cph"><img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=400&q=80" alt="ペナン路地" loading="lazy"><div class="cph-lbl">UNESCO旧市街 路地裏</div></div>
+      <div class="cph"><img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400&q=80" alt="バトゥフェリンギ" loading="lazy"><div class="cph-lbl">🏖 バトゥフェリンギビーチ</div></div>
+      <div class="cph"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80" alt="ビーチ夕日" loading="lazy"><div class="cph-lbl">ビーチサンセット 🍺</div></div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="ndiv"></div>
+
+<!-- ═══ SCHEDULE ═══ -->
+<div class="sw">
+<div class="sw-hd">
+  <div class="shd" style="border-color:rgba(255,255,255,.06)">
+    <div class="shd-n">03</div>
+    <div><div class="shd-lbl" style="color:var(--cy)">ITINERARY</div><div class="shd-title">7泊8日 — 全日程。正午から動く。</div></div>
+  </div>
+  <div class="sw-leg">
+    <span class="itg ir">🔴 要予約</span><span class="itg if">🟢 自由選択</span><span class="itg im">🔵 移動</span>
+    <span class="itg ic">🎰 カジノ</span><span class="itg io">🌴 リゾート</span><span class="itg ig">💪 筋トレ</span>
+  </div>
+</div>
+
+<!-- DAY 1 -->
+<div class="db cpk">
+  <div class="dl"><div class="dn">01</div><div class="dd">4/30 THU</div><div class="ds">✈ 機内泊<br>成田 21:50発</div><div class="dv">DEPARTURE</div></div>
+  <div class="dr">
+    <div class="it"><div class="it-bar"></div><div class="it-t">19:30</div><div><div class="it-tags"><span class="itg im">🔵 移動</span></div><div class="it-h">成田空港 T2 集合</div><div class="it-d">余裕を持って19:30には集合。バティック航空 OD871 チェックイン。免税でテンションを上げろ。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">21:50</div><div><div class="it-tags"><span class="itg ir">🔴 要予約済</span></div><div class="it-h">✈️ 成田（NRT）→ KL 出発</div><div class="it-d">バティック航空 OD871 · ボーイング737-800 · 約7.5h。KL着は翌5/1 04:20（T1着）。機内で仮眠必須。</div></div></div>
+  </div>
+</div>
+
+<!-- DAY 2 -->
+<div class="db ccy">
+  <div class="dl"><div class="dn">02</div><div class="dd">5/1 FRI — KL①</div><div class="ds">🏨 KL泊①<br>到着〜観光</div><div class="dv">ARRIVAL · MOSQUE · CASINO</div></div>
+  <div class="dr">
+    <div class="it"><div class="it-bar"></div><div class="it-t">04:20</div><div><div class="it-tags"><span class="itg im">🔵 移動</span></div><div class="it-h">✈️ KL T1着 → ホテルへ</div><div class="it-d">KLIA T1着。Grabでホテルへ（約45分）。荷物預け・シャワー後に仮眠OK。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">〜11:00</div><div><div class="it-tags"><span class="itg ig">💪 筋トレ</span></div><div class="it-h">💪 ホテルジムで筋トレ</div><div class="it-d">到着後にジムへ。旅行中も成長は止めない。シャワー後に昼食。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">12:00〜</div><div><div class="it-tags"><span class="itg if">🟢 自由</span></div><div class="it-h">💙 ブルーモスク（午後セッション）</div><div class="it-d">Grab約20分。14:00〜17:00セッションで余裕を持って訪問。入場無料。ショートパンツ・タンクトップ不可（ガウン貸出あり）。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">15:00〜</div><div><div class="it-tags"><span class="itg if">🟢 自由</span></div><div class="it-h ch">【選択肢】ブルーモスク後</div><div class="it-d">▶ 🌸 ピンクモスク（Grab約30分・無料）
+▶ 🏙 ペトロナスタワー外観・KLCC公園
+▶ アクアリアKLCC（RM80〜 · 水族館）
+▶ ホテルでリカバリー</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">18:00〜23:00</div><div><div class="it-tags"><span class="itg ic">🎰 カジノ</span></div><div class="it-h">🎰 ゲンティンハイランド — 天空の賭場へ</div><div class="it-d">Grabで約1h。夕方〜23時頃まで。パスポート必携・21歳以上。ロープウェイRM20。カジノ入場無料。スマカジ推奨。</div></div></div>
+  </div>
+</div>
+
+<!-- DAY 3 -->
+<div class="db cgd">
+  <div class="dl"><div class="dn">03</div><div class="dd">5/2 SAT — KL②</div><div class="ds">🏨 KL泊②<br>🌕 満月当日!</div><div class="dv">⭐ SKY MIRROR DAY</div></div>
+  <div class="dr">
+    <div class="it"><div class="it-bar"></div><div class="it-t">05:30〜06:00</div><div><div class="it-tags"><span class="itg ir">🔴 要予約 · 唯一の早起き日</span></div><div class="it-h">⭐ スカイミラー出発 — 今回最大のハイライト</div><div class="it-d">🌕 満月当日（5/2 02:23）！最高のタイミング。RM90（≒¥3,060）/人。KL→クランまで車1.5h。
+前日に出発時刻確定の連絡あり。今すぐ予約 → skymirrortour.com</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">13:00〜</div><div><div class="it-tags"><span class="itg ig">💪 筋トレ</span></div><div class="it-h">💪 帰還後 — ホテルで回復・筋トレ</div><div class="it-d">昼食・シャワー・ジムで軽く動く。ゆっくり復活。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">15:00〜</div><div><div class="it-tags"><span class="itg if">🟢 自由</span></div><div class="it-h">🦁 バトゥ洞窟（余裕あれば）</div><div class="it-d">KTM電車でBatu Caves駅（RM4≒¥140）。272段・黄金像。入場無料。2〜3h。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">夕方〜</div><div><div class="it-tags"><span class="itg if">🟢 自由</span></div><div class="it-h ch">【選択肢】KLの夜</div><div class="it-d">▶ 🏙 ペトロナスタワー夜景　▶ チャイナタウン散策
+▶ 天后宮ライトアップ　▶ 早寝して翌日に備える</div></div></div>
+  </div>
+</div>
+
+<!-- DAY 4 -->
+<div class="db ccy">
+  <div class="dl"><div class="dn">04</div><div class="dd">5/3 SUN — KL③</div><div class="ds">🏨 KL泊③<br>KL自由満喫日</div><div class="dv">KL FREE DAY</div></div>
+  <div class="dr">
+    <div class="it"><div class="it-bar"></div><div class="it-t">〜11:00</div><div><div class="it-tags"><span class="itg ig">💪 筋トレ</span></div><div class="it-h">💪 ホテルジムで筋トレ</div><div class="it-d">朝はゆっくり起床。筋トレ後にシャワー・朝食。12:00から出撃。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">12:00〜</div><div><div class="it-tags"><span class="itg if">🟢 自由</span></div><div class="it-h ch">【選択肢A】歴史・文化コース</div><div class="it-d">▶ 🏯 天后宮（Thean Hou Temple）· 中国系6層廟 · Grab約20分 · 入場無料
+▶ 🏟 ムルデカ広場（Merdeka Square）· 独立記念の地 · 旧植民地建築
+▶ 🛍 セントラル・マーケット · アート・雑貨・マレーシアみやげ</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">14:00〜</div><div><div class="it-tags"><span class="itg if">🟢 自由</span></div><div class="it-h ch">【選択肢B】自然・体験コース</div><div class="it-d">▶ 🌿 ペルダナ植物園（Lake Gardens）· 広大な緑と湖 · 入場無料
+▶ 🦈 アクアリアKLCC · RM80〜 · 水中トンネル・サメ · 所要2h
+▶ 🦁 バトゥ洞窟（まだなら）</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">夕方〜夜</div><div><div class="it-tags"><span class="itg if">🟢 自由</span></div><div class="it-h ch">【選択肢C】KL最後の夜</div><div class="it-d">▶ 🌸 ピンクモスク（まだなら）　▶ アロー通り（屋台街）
+▶ ペトロナスタワー夜景　▶ 翌マラッカ移動に備えて早寝</div></div></div>
+  </div>
+</div>
+
+<!-- DAY 5 -->
+<div class="db cor">
+  <div class="dl"><div class="dn">05</div><div class="dd">5/4 MON — MALACCA</div><div class="ds">🏨 マラッカ泊<br>旧市街近く推奨</div><div class="dv">HERITAGE · SLOW</div></div>
+  <div class="dr">
+    <div class="it"><div class="it-bar"></div><div class="it-t">〜11:00</div><div><div class="it-tags"><span class="itg ig">💪 筋トレ</span></div><div class="it-h">💪 KLでラスト筋トレ + チェックアウト</div><div class="it-d">ゆっくり朝食・筋トレ後にチェックアウト。TBSバスターミナルへ移動。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">12:00頃</div><div><div class="it-tags"><span class="itg im">🔵 移動</span></div><div class="it-h">🚌 KL → マラッカ（バス約2h）</div><div class="it-d">TBSターミナルからEasybookで予約。RM10〜15（≒¥340〜510）。12:00〜13:00発を狙う。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">14:30〜</div><div><div class="it-tags"><span class="itg if">🟢 自由</span></div><div class="it-h">🕌 マラッカ海峡モスク（満潮時間に合わせて）</div><div class="it-d">当日Google「マラッカ 満潮時間」で確認。入場無料。17:00〜18:00の夕日タイムが最高。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">16:00〜</div><div><div class="it-tags"><span class="itg if">🟢 自由</span></div><div class="it-h">🏛 マラッカ旧市街 — じっくり歩け</div><div class="it-d">オランダ広場・聖ポール教会・独立記念館・マラッカ川沿い。世界遺産の街を2〜3hかけて歩く。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">夜</div><div><div class="it-tags"><span class="itg if">🟢 自由</span></div><div class="it-h ch">【選択肢】マラッカの夜</div><div class="it-d">▶ 🚢 マラッカ川クルーズ（RM15≒¥510）
+▶ ジョンカーストリート散策（木〜日のみナイトマーケット）
+▶ 旧市街のバー・カフェでまったり</div></div></div>
+  </div>
+</div>
+
+<!-- DAY 6 -->
+<div class="db cgn">
+  <div class="dl"><div class="dn">06</div><div class="dd">5/5 TUE — PENANG①</div><div class="ds">🏨 ペナン泊①<br>KL経由→✈ペナン</div><div class="dv">MOVE · GEORGE TOWN</div></div>
+  <div class="dr">
+    <div class="it"><div class="it-bar"></div><div class="it-t">〜11:00</div><div><div class="it-tags"><span class="itg ig">💪 筋トレ</span></div><div class="it-h">💪 マラッカ最終筋トレ + チェックアウト</div><div class="it-d">見残した場所があれば午前中に立ち寄り。その後バスターミナルへ。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">12:00頃</div><div><div class="it-tags"><span class="itg im">🔵 移動</span></div><div class="it-h">🚌 マラッカ → KL（バス2h）→ KLIA2</div><div class="it-d">Easybookで12:00〜13:00発を予約。KL着後そのままKLIA2へ（バス約1h）。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">16:20発→17:20着</div><div><div class="it-tags"><span class="itg ir">🔴 要予約済</span></div><div class="it-h">✈️ KL → ペナン — エアアジア AK9134</div><div class="it-d">エアアジア AK9134 · エアバスA320 · 約1h。KLIA2発→ペナン国際空港D着。荷物確認を忘れずに。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">19:00〜</div><div><div class="it-tags"><span class="itg if">🟢 自由</span></div><div class="it-h">🏛 ジョージタウン — 夜の旧市街へ</div><div class="it-d">空港からGrab約30分。チェックイン後、夜のジョージタウンを軽く散策。翌日に備えて無理しない。</div></div></div>
+  </div>
+</div>
+
+<!-- DAY 7 -->
+<div class="db cgn">
+  <div class="dl"><div class="dn">07</div><div class="dd">5/6 WED — PENANG②</div><div class="ds">🏨 ペナン泊②<br>ジョージタウン満喫</div><div class="dv">CULTURE · STREET ART</div></div>
+  <div class="dr">
+    <div class="it"><div class="it-bar"></div><div class="it-t">〜11:00</div><div><div class="it-tags"><span class="itg ig">💪 筋トレ</span></div><div class="it-h">💪 ホテルジムで筋トレ</div><div class="it-d">朝はゆっくり起床。筋トレ後にシャワー・朝食。12:00から出撃。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">12:00〜</div><div><div class="it-tags"><span class="itg if">🟢 自由</span></div><div class="it-h">🏛 ジョージタウン — 丸1日歩き倒せ</div><div class="it-d">UNESCO世界遺産の旧市街を徒歩で探索。ストリートアート・コーンウォリス要塞（RM20）・ペナンヒル（RM30）。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">夕方〜</div><div><div class="it-tags"><span class="itg if">🟢 自由</span></div><div class="it-h ch">【選択肢】ペナンの夜 / 翌リゾートに備える</div><div class="it-d">▶ ペナンヒルの夕景・夜景　▶ 旧市街の路地裏・水上集落
+▶ 翌日のバトゥフェリンギに備えて早寝推奨</div></div></div>
+  </div>
+</div>
+
+<!-- DAY 8 -->
+<div class="db coc">
+  <div class="dl"><div class="dn">08</div><div class="dd">5/7 THU — RESORT + 帰国</div><div class="ds">🌴 リゾートday<br>夜 ペナン→KL→成田</div><div class="dv">🌴 RESORT → HOMEBOUND</div></div>
+  <div class="dr">
+    <div class="it"><div class="it-bar"></div><div class="it-t">〜11:00</div><div><div class="it-tags"><span class="itg ig">💪 筋トレ</span></div><div class="it-h">💪 最後の筋トレ + チェックアウト準備</div><div class="it-d">朝ゆっくり起床・ジム・シャワー。荷物をまとめてフロントへ預ける。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">12:00〜</div><div><div class="it-tags"><span class="itg io">🌴 リゾート</span></div><div class="it-h">🏖 バトゥフェリンギビーチへ — Grab約30分</div><div class="it-d">ペナン最大のリゾートビーチ。到着後はそのままビーチへ直行。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">午後〜15:30</div><div><div class="it-tags"><span class="itg io">🌴 リゾート</span></div><div class="it-h ch">【選択肢】リゾート完全フリー</div><div class="it-d">▶ ビーチで読書・昼寝・海水浴
+▶ 🏄 ジェットスキー（RM50〜100≒¥1,700〜3,400）
+▶ 🤿 シュノーケリング（RM80〜）
+▶ バナナボート・パラセーリング
+▶ ビーチカフェでのんびりビール</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">16:00</div><div><div class="it-tags"><span class="itg im">🔵 移動</span></div><div class="it-h">🚕 ペナン空港（PEN）へ出発 — Grab約30分</div><div class="it-d">フロントから荷物を回収してGrabへ。空港まで約30分。余ったRMは空港で使い切れ。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">18:30発→19:30着</div><div><div class="it-tags"><span class="itg ir">🔴 要予約済</span></div><div class="it-h">✈️ ペナン → KL — バティック航空 OD2107</div><div class="it-d">バティック航空 OD2107 · ボーイング737-800 · 約1h。KLIA T1着。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">〜21:00</div><div><div class="it-tags"><span class="itg if">🟢 自由</span></div><div class="it-h">KL T1 → 国際線ターミナルへ移動・夕食</div><div class="it-d">MH088はKLIA T1発。ターミナル内で夕食。余ったRMを使い切るラストチャンス。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">23:30</div><div><div class="it-tags"><span class="itg ir">🔴 要予約済</span></div><div class="it-h">✈️ KL → 成田 — マレーシア航空 MH088</div><div class="it-d">マレーシア航空 MH088 · エアバスA330-900 · 約7h10分。機内で就寝。</div></div></div>
+  </div>
+</div>
+
+<!-- DAY 9 -->
+<div class="db cpk">
+  <div class="dl"><div class="dn">09</div><div class="dd">5/8 FRI — 帰国</div><div class="ds">🏠 成田着</div><div class="dv">MISSION COMPLETE</div></div>
+  <div class="dr">
+    <div class="it"><div class="it-bar"></div><div class="it-t">07:40</div><div><div class="it-tags"><span class="itg im">🔵 着陸</span></div><div class="it-h">✈️ 成田（NRT）T2 着 — 革命の帰還</div><div class="it-d">お疲れ様でした。7泊8日・13か所・4人の革命。成田着後は解散。次の冒険まで英気を養え。</div></div></div>
+  </div>
+</div>
+
+</div><!-- /sw -->
+
+<div class="ndiv"></div>
+
+<!-- ═══ APPS & CHECKLIST ═══ -->
+<div class="sec">
+<div class="si">
+  <div class="shd">
+    <div class="shd-n">04</div>
+    <div><div class="shd-lbl" style="color:var(--gn)">GEAR UP</div><div class="shd-title">必須アプリ ＆ 持ち物</div></div>
+  </div>
+  <div class="two-col">
+    <div>
+      <div class="ptitle" style="color:var(--cy)">📱 インストール必須</div>
+      <div class="app-list">
+        <div class="app"><div class="app-ic">🚗</div><div class="app-bd"><div class="app-n">Grab</div><div class="app-d">東南アジアのUber。乗車前に料金確定。4人1台シェアで激安。全エリア対応。</div><div class="app-w">全エリアの移動</div></div></div>
+        <div class="app"><div class="app-ic">✈️</div><div class="app-bd"><div class="app-n">AirAsia / Batik Air</div><div class="app-d">AK9134（KL→PEN）とOD2107（PEN→KL）の搭乗券はアプリで管理。</div><div class="app-w">国内線2便</div></div></div>
+        <div class="app"><div class="app-ic">🗺️</div><div class="app-bd"><div class="app-n">Google Maps</div><div class="app-d">マレーシア全土をオフラインDL必須。圏外でも動く最後の砦。</div><div class="app-w">全エリアのナビ</div></div></div>
+        <div class="app"><div class="app-ic">🚌</div><div class="app-bd"><div class="app-n">Easybook</div><div class="app-d">KL〜マラッカのバス予約。窓口不要。RM10〜15の最安手段。</div><div class="app-w">KL ↔ マラッカ バス</div></div></div>
+        <div class="app"><div class="app-ic">💱</div><div class="app-bd"><div class="app-n">Wise</div><div class="app-d">最良レートのデビットカード。現地ATMでRM引き出し。渡航前にカード作成推奨。</div><div class="app-w">両替・キャッシュ管理</div></div></div>
+        <div class="app"><div class="app-ic">🌐</div><div class="app-bd"><div class="app-n">Google翻訳</div><div class="app-d">カメラ翻訳でメニューや看板をリアルタイム翻訳。マレー語・中国語対応。</div><div class="app-w">飲食店・案内板</div></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="ptitle" style="color:var(--gn)">🎒 持ち物チェック</div>
+      <div class="ckg">
+        <div class="ck"><div class="ck-box"></div><div class="ck-em">📔</div><div><div class="ck-m">パスポート</div><div class="ck-s">残存6か月以上・カジノ必携</div></div></div>
+        <div class="ck"><div class="ck-box"></div><div class="ck-em">💳</div><div><div class="ck-m">クレジットカード</div><div class="ck-s">Visa/Mastercard</div></div></div>
+        <div class="ck"><div class="ck-box"></div><div class="ck-em">💵</div><div><div class="ck-m">現金（円）</div><div class="ck-s">KL空港でRM両替 ¥3万</div></div></div>
+        <div class="ck"><div class="ck-box"></div><div class="ck-em">📱</div><div><div class="ck-m">スマホ＋充電器</div><div class="ck-s">Grabなしでは動けない</div></div></div>
+        <div class="ck"><div class="ck-box"></div><div class="ck-em">🔌</div><div><div class="ck-m">変換プラグ BF型</div><div class="ck-s">マレーシアは3ピン</div></div></div>
+        <div class="ck"><div class="ck-box"></div><div class="ck-em">🔋</div><div><div class="ck-m">モバイルバッテリー</div><div class="ck-s">Grab連続使用で爆速消費</div></div></div>
+        <div class="ck"><div class="ck-box"></div><div class="ck-em">🌞</div><div><div class="ck-m">日焼け止め SPF50+</div><div class="ck-s">スカイミラー・ビーチ必須</div></div></div>
+        <div class="ck"><div class="ck-box"></div><div class="ck-em">👒</div><div><div class="ck-m">帽子</div><div class="ck-s">炎天下35℃の洗礼</div></div></div>
+        <div class="ck"><div class="ck-box"></div><div class="ck-em">👟</div><div><div class="ck-m">スニーカー</div><div class="ck-s">バトゥ洞窟272段</div></div></div>
+        <div class="ck"><div class="ck-box"></div><div class="ck-em">👘</div><div><div class="ck-m">長ズボン（薄手）</div><div class="ck-s">モスク入場必須</div></div></div>
+        <div class="ck"><div class="ck-box"></div><div class="ck-em">💊</div><div><div class="ck-m">常備薬・胃腸薬</div><div class="ck-s">屋台食中毒対策</div></div></div>
+        <div class="ck"><div class="ck-box"></div><div class="ck-em">🧴</div><div><div class="ck-m">虫除けスプレー</div><div class="ck-s">屋外・マングローブ</div></div></div>
+        <div class="ck"><div class="ck-box"></div><div class="ck-em">👙</div><div><div class="ck-m">水着</div><div class="ck-s">ペナンビーチ用</div></div></div>
+        <div class="ck"><div class="ck-box"></div><div class="ck-em">🎒</div><div><div class="ck-m">防水バッグ</div><div class="ck-s">スカイミラーは水飛沫あり</div></div></div>
+        <div class="ck"><div class="ck-box"></div><div class="ck-em">📸</div><div><div class="ck-m">カメラ（防水推奨）</div><div class="ck-s">スカイミラーに広角必須</div></div></div>
+        <div class="ck"><div class="ck-box"></div><div class="ck-em">💧</div><div><div class="ck-m">水筒 500ml+</div><div class="ck-s">熱中症は笑えない</div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="ndiv"></div>
+
+<!-- ═══ TRANSPORT ═══ -->
+<div class="sec alt">
+<div class="si">
+  <div class="shd">
+    <div class="shd-n">05</div>
+    <div><div class="shd-lbl" style="color:var(--cy)">TRANSPORT</div><div class="shd-title">全フライト ＆ 移動ガイド</div></div>
+  </div>
+  <div class="tw">
+    <table class="tbl">
+      <thead><tr><th>区間</th><th>便名・手段</th><th>日時</th><th>RM/¥目安</th><th>備考</th></tr></thead>
+      <tbody>
+        <tr><td>成田 T2 → KL T1</td><td class="tap">バティック航空 OD871</td><td>4/30 21:50 → 5/1 04:20</td><td class="trm">—</td><td>trip.com予約済</td></tr>
+        <tr><td>KL市内全般</td><td class="tap">Grab</td><td>随時</td><td class="trm">RM5〜25/台</td><td class="tjy">4人割り勘で超安</td></tr>
+        <tr><td>KL → スカイミラー</td><td class="tap">skymirrortour.com</td><td>5/2 早朝</td><td class="trm">RM90/人</td><td>今すぐ予約！</td></tr>
+        <tr><td>KL → ゲンティン</td><td class="tap">Grab</td><td>5/1 夕方</td><td class="trm">RM30〜60/台</td><td class="tjy">約1h</td></tr>
+        <tr><td>KL → マラッカ</td><td class="tap">TBSバス Easybook</td><td>5/4 12:00頃</td><td class="trm">RM10〜15/人</td><td class="tjy">約2h</td></tr>
+        <tr><td>マラッカ → KL</td><td class="tap">TBSバス Easybook</td><td>5/5 12:00頃</td><td class="trm">RM10〜15/人</td><td class="tjy">約2h</td></tr>
+        <tr><td>KL T2 → ペナン</td><td class="tap">エアアジア AK9134</td><td>5/5 16:20 → 17:20</td><td class="trm">—</td><td>trip.com予約済</td></tr>
+        <tr><td>ペナン市内全般</td><td class="tap">Grab</td><td>随時</td><td class="trm">RM10〜30/台</td><td class="tjy">空港〜市内約30分</td></tr>
+        <tr><td>ペナン → KL T1</td><td class="tap">バティック航空 OD2107</td><td>5/7 18:30 → 19:30</td><td class="trm">—</td><td>trip.com予約済</td></tr>
+        <tr><td>KL T1 → 成田 T2</td><td class="tap">マレーシア航空 MH088</td><td>5/7 23:30 → 5/8 07:40</td><td class="trm">—</td><td>trip.com予約済</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+
+<div class="ndiv"></div>
+
+<!-- ═══ BUDGET ═══ -->
+<div class="sec">
+<div class="si">
+  <div class="shd">
+    <div class="shd-n">06</div>
+    <div><div class="shd-lbl" style="color:var(--gd)">BUDGET</div><div class="shd-title">貧困男爵の軍資金（1RM≒34円）</div></div>
+  </div>
+  <div class="bgrid">
+    <div class="bc bpk"><div class="bc-lb">✈ 国際線往復 4人合計</div><div class="bc-v">¥631,880</div><div class="bc-s">trip.com · 1人約¥157,970</div></div>
+    <div class="bc bcy"><div class="bc-lb">✈ 国内線2便（往復）込み</div><div class="bc-v">上記に含む</div><div class="bc-s">AK9134 + OD2107</div></div>
+    <div class="bc bgn"><div class="bc-lb">🏨 宿泊（7泊）</div><div class="bc-v">¥2,700〜6,800/泊</div><div class="bc-s">4人1室で割り勘最安</div></div>
+    <div class="bc bgd"><div class="bc-lb">🌊 スカイミラー</div><div class="bc-v">¥3,060/人</div><div class="bc-s">RM90 · 今すぐ予約！</div></div>
+    <div class="bc bor"><div class="bc-lb">🚕 Grab・バス・入場料等</div><div class="bc-v">¥5,000〜8,500</div><div class="bc-s">4人割り勘でさらに圧縮</div></div>
+    <div class="bc btot"><div class="bc-lb">💰 現地費用目安（国際線除く）</div><div class="bc-v">¥2〜3万</div><div class="bc-s">航空券込みで1人¥18〜20万が目安</div></div>
+  </div>
+</div>
+</div>
+
+<div class="ndiv"></div>
+
+<!-- ═══ NOTES ═══ -->
+<div class="sec alt">
+<div class="si">
+  <div class="shd">
+    <div class="shd-n">07</div>
+    <div><div class="shd-lbl" style="color:var(--pk)">IMPORTANT</div><div class="shd-title">注意事項 ＆ 今すぐやること</div></div>
+  </div>
+  <div class="notes">
+    <div class="note nu"><span class="n-badge">🔴 今すぐ</span><span class="n-txt"><strong>スカイミラー予約</strong> → <strong>skymirrortour.com</strong>（RM90/人≒¥3,060）。5/2が🌕満月当日で最高。枠がすぐ埋まる。+60 10-509 1007</span></div>
+    <div class="note nu"><span class="n-badge">🔴 今すぐ</span><span class="n-txt">trip.comで予約した<strong>4フライトの予約確認メール</strong>を全員で共有。搭乗券はAirAsia / Batik Airアプリに入れておく。</span></div>
+    <div class="note nu"><span class="n-badge">🔴 今すぐ</span><span class="n-txt"><strong>マレーシア入国 デジタルアライバルカード</strong>の登録が必要。入国3日前から登録可能。忘れると搭乗拒否される。</span></div>
+    <div class="note nw"><span class="n-badge">🟡 注意</span><span class="n-txt">成田T2発・KL T1着・KL T1発のルートに注意。KL国内線はKLIA2発。<strong>T1とT2は別ターミナル</strong>（シャトル約15分）。</span></div>
+    <div class="note nw"><span class="n-badge">🟡 注意</span><span class="n-txt">モスク（ブルー・ピンク・マラッカ）は<strong>ショートパンツ・タンクトップ不可</strong>。入口で無料ガウン貸出あり。</span></div>
+    <div class="note nw"><span class="n-badge">🟡 注意</span><span class="n-txt">ゲンティンカジノは<strong>パスポート必携・21歳以上</strong>。スマートカジュアル推奨。サンダルで弾かれた話は多い。</span></div>
+    <div class="note nw"><span class="n-badge">🟡 注意</span><span class="n-txt">スカイミラーは<strong>悪天候・強風で中止</strong>あり。前日に出発時刻確定の連絡が来る（5:30〜7:00の幅あり）。</span></div>
+    <div class="note nt"><span class="n-badge">🟢 節約</span><span class="n-txt">Grabは<strong>4人で1台シェア</strong>。KL市内RM5〜20/台 → 4人割り勘でRM1〜5/人（≒¥34〜170）。電車より安い場合も。</span></div>
+    <div class="note nt"><span class="n-badge">🟢 節約</span><span class="n-txt"><strong>現地SIM</strong> → KL空港着後すぐCelcomかDigiで購入。15日間データ無制限でRM30（≒¥1,020）。Grab必須。</span></div>
+    <div class="note ni"><span class="n-badge">ℹ️ 筋トレ</span><span class="n-txt">ホテル予約時に<strong>ジム設備を確認</strong>推奨。ない場合はDecathlonでチューブ等を調達するか体重トレで対応。</span></div>
+    <div class="note ni"><span class="n-badge">ℹ️ 情報</span><span class="n-txt">マラッカのジョンカーストリートナイトマーケットは<strong>木・土・日のみ</strong>。5/4（月）は昼間散策と川クルーズで味わい尽くせ。</span></div>
+    <div class="note ni"><span class="n-badge">ℹ️ KL新スポット</span><span class="n-txt"><strong>天后宮</strong>（Thean Hou Temple）は夜間ライトアップが特に美しい。<strong>アクアリアKLCC</strong>はペトロナスタワー地下直結で雨天時にも◎。</span></div>
+  </div>
+</div>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<div class="footer">
+  <div class="footer-t">貧困男爵 in マレーシア — 革命の灯火</div>
+  <div class="footer-s">4/30 成田 → 5/8 成田 &nbsp;|&nbsp; 4 MEN · 7 NIGHTS &nbsp;|&nbsp; OD871 · AK9134 · OD2107 · MH088 &nbsp;|&nbsp; 💪 午前は筋トレ &nbsp;|&nbsp; 🟢 自由に生きろ</div>
+</div>
+
+</body>
+</html>
