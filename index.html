@@ -121,6 +121,12 @@ img{display:block;width:100%;height:100%;object-fit:cover;}
 .dd{font-family:'DM Mono',monospace;font-size:clamp(8px,1.4vw,11px);letter-spacing:1px;margin-bottom:5px;}
 .ds{font-size:clamp(9px,1.3vw,11px);color:var(--mu);line-height:1.5;}
 .dv{margin-top:9px;font-family:'Bebas Neue',sans-serif;font-size:clamp(8px,1.2vw,11px);letter-spacing:2px;padding:3px 7px;border-radius:2px;display:inline-block;}
+.dh{margin-top:10px;padding:9px 11px;border-radius:6px;font-size:clamp(9px,1.3vw,11px);line-height:1.8;border-left:3px solid currentColor;background:rgba(255,255,255,.04);}
+.dh-name{font-family:'Bebas Neue',sans-serif;font-size:clamp(12px,1.8vw,15px);letter-spacing:1px;display:block;margin-bottom:3px;}
+.dh-row{display:flex;gap:12px;flex-wrap:wrap;}
+.dh-item{display:flex;flex-direction:column;}
+.dh-lbl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:1px;color:var(--mu);text-transform:uppercase;}
+.dh-val{font-size:clamp(10px,1.5vw,11px);color:#fff;font-weight:700;}
 .dr{padding:clamp(10px,2vw,26px) 0 clamp(10px,2vw,26px) clamp(14px,2vw,28px);}
 .it{display:grid;grid-template-columns:8px clamp(60px,10vw,96px) 1fr;gap:0 clamp(7px,1.2vw,12px);padding:clamp(7px,1.2vw,10px) 0;border-bottom:1px solid rgba(255,255,255,.03);align-items:start;}
 .it:last-child{border-bottom:none;}
@@ -280,9 +286,9 @@ img{display:block;width:100%;height:100%;object-fit:cover;}
     <div class="hero-eye">SPECIAL ISSUE — MEN'S TRAVEL MAGAZINE — 2026.05</div>
     <h1 class="hero-h1">貧困<span class="pk">男爵</span><br>in Malaysia</h1>
     <div class="hero-sub-row"><div class="hero-sub-line"></div><div class="hero-subtitle">革命の灯火</div></div>
-    <p class="hero-tag">カジノ · ビーチ · 遺跡 · 夜遊び · 筋トレ — 4/30 深夜 成田 発 → 5/8 帰還</p>
+    <p class="hero-tag">カジノ · ビーチ · 遺跡 · 夜遊び · 筋トレ — 5/1 成田 発 → 5/8 帰還</p>
     <div class="route-bar">
-      <span class="rb">✈ 成田 4/30深夜</span><span class="rb-a">›</span>
+      <span class="rb">✈ 成田 5/1朝</span><span class="rb-a">›</span>
       <span class="rb kl">🏙 KL 3泊</span><span class="rb-a">›</span>
       <span class="rb ml">🕌 マラッカ 1泊</span><span class="rb-a">›</span>
       <span class="rb pe">🏖 ペナン 2泊</span><span class="rb-a">›</span>
@@ -306,104 +312,16 @@ img{display:block;width:100%;height:100%;object-fit:cover;}
     <div><div class="shd-lbl" style="color:var(--pk)">DESTINATIONS</div><div class="shd-title">行くぞ。13か所の戦場。</div></div>
   </div>
   <div class="mosaic">
-    <div class="mc ms1 ac"><img src="https://images.unsplash.com/photo-1565534670430-df97f75a4b37?w=900&q=80" alt="スカイミラー" loading="lazy"><div class="mc-body"><span class="mc-badge b-req">● 要事前予約</span><div class="mc-name">🌊 スカイミラー</div><div class="mc-loc">Kuala Selangor — KLから車1.5h</div><div class="mc-note">満月直後の5/2〜3がベスト。砂州に張った水面が空を完璧に映す。今回最大のハイライト。</div><div class="mc-price">RM90 ≒ ¥3,060 / 人 · skymirrortour.com</div></div></div>
-    <div class="mc ms2 ag"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80" alt="ゲンティン" loading="lazy"><div class="mc-body"><span class="mc-badge b-cas">● カジノ 24H</span><div class="mc-name">🎰 ゲンティン</div><div class="mc-loc">Pahang — 標高1800m</div><div class="mc-price">ロープウェイ RM20 · カジノ無料</div></div></div>
-    <div class="mc ms3 ap"><img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=600&q=80" alt="KL夜景" loading="lazy"><div class="mc-body"><span class="mc-badge b-free">● KL CITY</span><div class="mc-name">🏙 クアラルンプール</div><div class="mc-loc">Federal Territory</div><div class="mc-price">ペトロナスタワー · 夜の街</div></div></div>
-    <div class="mc ms4 ag"><img src="https://images.unsplash.com/photo-1601925228008-6ca20f37c12f?w=600&q=80" alt="バトゥ洞窟" loading="lazy"><div class="mc-body"><span class="mc-badge b-free">● 入場無料</span><div class="mc-name">🦁 バトゥ洞窟</div><div class="mc-loc">Gombak, KL</div><div class="mc-price">電車 RM4 ≒ ¥140</div></div></div>
-    <div class="mc ms5 ac"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Masjid_Sultan_Salahuddin_Abdul_Aziz_Shah.jpg/640px-Masjid_Sultan_Salahuddin_Abdul_Aziz_Shah.jpg" alt="ブルーモスク" loading="lazy"><div class="mc-body"><span class="mc-badge b-free">● 入場無料</span><div class="mc-name">💙 ブルーモスク</div><div class="mc-loc">Shah Alam</div><div class="mc-price">世界最大級の青いドーム</div></div></div>
-    <div class="mc ms6 ap"><img src="https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?w=600&q=80" alt="ピンクモスク" loading="lazy"><div class="mc-body"><span class="mc-badge b-free">● 入場無料</span><div class="mc-name">🌸 ピンクモスク</div><div class="mc-loc">Putrajaya</div><div class="mc-price">湖畔の幻想的なドーム</div></div></div>
-    <div class="mc ms7 ao"><img src="https://images.unsplash.com/photo-1581540222194-0def2dda95b8?w=600&q=80" alt="マラッカ海峡モスク" loading="lazy"><div class="mc-body"><span class="mc-badge b-free">● 入場無料</span><div class="mc-name">🕌 マラッカ<br>海峡モスク</div><div class="mc-loc">Melaka</div></div></div>
-    <div class="mc ms8 an"><img src="https://images.unsplash.com/photo-1549571865-88c2ae24a1cf?w=600&q=80" alt="ジョージタウン" loading="lazy"><div class="mc-body"><span class="mc-badge b-free">● UNESCO</span><div class="mc-name">🏛 ジョージタウン</div><div class="mc-loc">Penang Island</div><div class="mc-price">ストリートアート · 旧市街 · 徒歩で制覇</div></div></div>
-    <div class="mc ms9 ac"><img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80" alt="バトゥフェリンギ" loading="lazy"><div class="mc-body"><span class="mc-badge b-res">● リゾートDAY</span><div class="mc-name">🏖 バトゥフェリンギ</div><div class="mc-loc">Penang North</div><div class="mc-price">ジェットスキー · シュノーケル · 昼寝</div></div></div>
+    <div class="mc ms1 ac"><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80" alt="スカイミラー"><div class="mc-body"><span class="mc-badge b-req">● 要事前予約</span><div class="mc-name">🌊 スカイミラー</div><div class="mc-loc">Kuala Selangor — KLから車1.5h</div><div class="mc-note">満月直後の5/2〜3がベスト。砂州に張った水面が空を完璧に映す。今回最大のハイライト。</div><div class="mc-price">RM90 ≒ ¥3,060 / 人 · skymirrortour.com</div></div></div>
+    <div class="mc ms2 ag"><img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=600&q=80" alt="ゲンティン"><div class="mc-body"><span class="mc-badge b-cas">● カジノ 24H</span><div class="mc-name">🎰 ゲンティン</div><div class="mc-loc">Pahang — 標高1800m</div><div class="mc-price">ロープウェイ RM20 · カジノ無料</div></div></div>
+    <div class="mc ms3 ap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80" alt="KL夜景"><div class="mc-body"><span class="mc-badge b-free">● KL CITY</span><div class="mc-name">🏙 クアラルンプール</div><div class="mc-loc">Federal Territory</div><div class="mc-price">ペトロナスタワー · 夜の街</div></div></div>
+    <div class="mc ms4 ag"><img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&q=80" alt="バトゥ洞窟"><div class="mc-body"><span class="mc-badge b-free">● 入場無料</span><div class="mc-name">🦁 バトゥ洞窟</div><div class="mc-loc">Gombak, KL</div><div class="mc-price">電車 RM4 ≒ ¥140</div></div></div>
+    <div class="mc ms5 ac"><img src="https://images.unsplash.com/photo-1519817914152-22d216bb9170?w=800&q=80" alt="ブルーモスク"><div class="mc-body"><span class="mc-badge b-free">● 入場無料</span><div class="mc-name">💙 ブルーモスク</div><div class="mc-loc">Shah Alam</div><div class="mc-price">世界最大級の青いドーム</div></div></div>
+    <div class="mc ms6 ap"><img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?w=800&q=80" alt="ピンクモスク"><div class="mc-body"><span class="mc-badge b-free">● 入場無料</span><div class="mc-name">🌸 ピンクモスク</div><div class="mc-loc">Putrajaya</div><div class="mc-price">湖畔の幻想的なドーム</div></div></div>
+    <div class="mc ms7 ao"><img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&q=80" alt="マラッカ海峡モスク"><div class="mc-body"><span class="mc-badge b-free">● 入場無料</span><div class="mc-name">🕌 マラッカ<br>海峡モスク</div><div class="mc-loc">Melaka</div></div></div>
+    <div class="mc ms8 an"><img src="https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?w=800&q=80" alt="ジョージタウン"><div class="mc-body"><span class="mc-badge b-free">● UNESCO</span><div class="mc-name">🏛 ジョージタウン</div><div class="mc-loc">Penang Island</div><div class="mc-price">ストリートアート · 旧市街 · 徒歩で制覇</div></div></div>
+    <div class="mc ms9 ac"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="バトゥフェリンギ"><div class="mc-body"><span class="mc-badge b-res">● リゾートDAY</span><div class="mc-name">🏖 バトゥフェリンギ</div><div class="mc-loc">Penang North</div><div class="mc-price">ジェットスキー · シュノーケル · 昼寝</div></div></div>
   </div>
-</div>
-</div>
-
-<div class="ndiv"></div>
-
-<!-- ═══ CITY PHOTO STRIPS ═══ -->
-<div class="sec alt">
-<div class="si">
-  <div class="shd">
-    <div class="shd-n">02</div>
-    <div><div class="shd-lbl" style="color:var(--cy)">PHOTO GUIDE</div><div class="shd-title">エリア別 リアル写真ガイド</div></div>
-  </div>
-
-  <!-- KL -->
-  <div class="city">
-    <div class="city-lbl">
-      <div class="city-dot" style="background:var(--cy)"></div>
-      <div class="city-name" style="color:var(--cy)">KUALA LUMPUR</div>
-      <div class="city-desc">Day 2〜4 · 3泊 · モスク・洞窟・カジノ・市内観光</div>
-    </div>
-    <div class="city-photos cp5">
-      <div class="cph"><img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=700&q=80" alt="KL夜景" loading="lazy"><div class="cph-lbl">🌃 KLスカイライン · ペトロナスタワー</div></div>
-      <div class="cph"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=400&q=80" alt="ゲンティン" loading="lazy"><div class="cph-lbl">🎰 ゲンティン天空カジノ</div></div>
-      <div class="cph"><img src="https://images.unsplash.com/photo-1601925228008-6ca20f37c12f?w=400&q=80" alt="バトゥ洞窟" loading="lazy"><div class="cph-lbl">🦁 バトゥ洞窟272段</div></div>
-      <div class="cph"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Masjid_Sultan_Salahuddin_Abdul_Aziz_Shah.jpg/640px-Masjid_Sultan_Salahuddin_Abdul_Aziz_Shah.jpg" alt="ブルーモスク" loading="lazy"><div class="cph-lbl">💙 ブルーモスク</div></div>
-      <div class="cph"><img src="https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?w=400&q=80" alt="ピンクモスク" loading="lazy"><div class="cph-lbl">🌸 ピンクモスク</div></div>
-    </div>
-  </div>
-
-  <!-- KL 追加スポット -->
-  <div class="city">
-    <div class="city-lbl">
-      <div class="city-dot" style="background:var(--gd)"></div>
-      <div class="city-name" style="color:var(--gd)">KL — 追加スポット候補</div>
-      <div class="city-desc">Day 4（KL3日目）の自由時間に回れる穴場・名所</div>
-    </div>
-    <div class="city-photos cp4">
-      <div class="cph"><img src="https://images.unsplash.com/photo-1565534670430-df97f75a4b37?w=700&q=80" alt="天后宮イメージ" loading="lazy"><div class="cph-lbl">🏯 天后宮（Thean Hou Temple）· 中国系6層廟</div></div>
-      <div class="cph"><img src="https://images.unsplash.com/photo-1588421357574-87938a86fa28?w=400&q=80" alt="ムルデカ広場" loading="lazy"><div class="cph-lbl">🏟 ムルデカ広場 · 独立記念の地</div></div>
-      <div class="cph"><img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=400&q=80" alt="セントラルマーケット" loading="lazy"><div class="cph-lbl">🛍 セントラル・マーケット · 雑貨・土産</div></div>
-      <div class="cph"><img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=400&q=80" alt="ペルダナ植物園" loading="lazy"><div class="cph-lbl">🌿 ペルダナ植物園 · KLCCの緑のオアシス</div></div>
-    </div>
-  </div>
-
-  <!-- SKY MIRROR -->
-  <div class="city">
-    <div class="city-lbl">
-      <div class="city-dot" style="background:var(--cy)"></div>
-      <div class="city-name" style="color:var(--cy)">SKY MIRROR ⭐</div>
-      <div class="city-desc">Day 2か3 · 満月5/2直後 · 今回最大のハイライト</div>
-    </div>
-    <div class="city-photos cp3">
-      <div class="cph"><img src="https://images.unsplash.com/photo-1565534670430-df97f75a4b37?w=700&q=80" alt="スカイミラー" loading="lazy"><div class="cph-lbl">🌊 スカイミラー — 干潮時のみ現れる鏡の世界</div></div>
-      <div class="cph"><img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=400&q=80" alt="海岸" loading="lazy"><div class="cph-lbl">クアラスランゴール海岸</div></div>
-      <div class="cph"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80" alt="マレーシア海" loading="lazy"><div class="cph-lbl">ボートで約30分の沖合</div></div>
-    </div>
-  </div>
-
-  <!-- MALACCA -->
-  <div class="city">
-    <div class="city-lbl">
-      <div class="city-dot" style="background:var(--or)"></div>
-      <div class="city-name" style="color:var(--or)">MALACCA</div>
-      <div class="city-desc">Day 5 · 1泊 · UNESCO世界遺産 · 海峡モスク · 旧市街</div>
-    </div>
-    <div class="city-photos cp4">
-      <div class="cph"><img src="https://images.unsplash.com/photo-1581540222194-0def2dda95b8?w=700&q=80" alt="マラッカ海峡モスク" loading="lazy"><div class="cph-lbl">🕌 マラッカ海峡モスク — 海に浮かぶ絶景</div></div>
-      <div class="cph"><img src="https://images.unsplash.com/photo-1588421357574-87938a86fa28?w=400&q=80" alt="マラッカ旧市街" loading="lazy"><div class="cph-lbl">オランダ広場 · 赤い建物</div></div>
-      <div class="cph"><img src="https://images.unsplash.com/photo-1518639192441-8fce0a366e2e?w=400&q=80" alt="マラッカ川" loading="lazy"><div class="cph-lbl">マラッカ川クルーズ（夜）</div></div>
-      <div class="cph"><img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=400&q=80" alt="ジョンカーストリート" loading="lazy"><div class="cph-lbl">ジョンカーストリート</div></div>
-    </div>
-  </div>
-
-  <!-- PENANG -->
-  <div class="city">
-    <div class="city-lbl">
-      <div class="city-dot" style="background:var(--gn)"></div>
-      <div class="city-name" style="color:var(--gn)">PENANG</div>
-      <div class="city-desc">Day 6〜7 · 2泊 · ジョージタウン + リゾートday</div>
-    </div>
-    <div class="city-photos cp4">
-      <div class="cph"><img src="https://images.unsplash.com/photo-1549571865-88c2ae24a1cf?w=700&q=80" alt="ジョージタウン" loading="lazy"><div class="cph-lbl">🏛 ジョージタウン ストリートアート</div></div>
-      <div class="cph"><img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=400&q=80" alt="ペナン路地" loading="lazy"><div class="cph-lbl">UNESCO旧市街 路地裏</div></div>
-      <div class="cph"><img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400&q=80" alt="バトゥフェリンギ" loading="lazy"><div class="cph-lbl">🏖 バトゥフェリンギビーチ</div></div>
-      <div class="cph"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80" alt="ビーチ夕日" loading="lazy"><div class="cph-lbl">ビーチサンセット 🍺</div></div>
-    </div>
-  </div>
-
 </div>
 </div>
 
@@ -424,18 +342,16 @@ img{display:block;width:100%;height:100%;object-fit:cover;}
 
 <!-- DAY 1 -->
 <div class="db cpk">
-  <div class="dl"><div class="dn">01</div><div class="dd">4/30 THU</div><div class="ds">✈ 機内泊<br>成田 21:50発</div><div class="dv">DEPARTURE</div></div>
+  <div class="dl"><div class="dn">01</div><div class="dd">5/1 FRI</div><div class="ds">✈ 成田 10:25発<br>KL 16:55着</div><div class="dv">DEPARTURE</div></div>
   <div class="dr">
-    <div class="it"><div class="it-bar"></div><div class="it-t">19:30</div><div><div class="it-tags"><span class="itg im">🔵 移動</span></div><div class="it-h">成田空港 T2 集合</div><div class="it-d">余裕を持って19:30には集合。バティック航空 OD871 チェックイン。免税でテンションを上げろ。</div></div></div>
-    <div class="it"><div class="it-bar"></div><div class="it-t">21:50</div><div><div class="it-tags"><span class="itg ir">🔴 要予約済</span></div><div class="it-h">✈️ 成田（NRT）→ KL 出発</div><div class="it-d">バティック航空 OD871 · ボーイング737-800 · 約7.5h。KL着は翌5/1 04:20（T1着）。機内で仮眠必須。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">08:00</div><div><div class="it-tags"><span class="itg im">🔵 移動</span></div><div class="it-h">成田空港 T2 集合</div><div class="it-d">余裕を持って08:00には集合。バティック航空 OD873 チェックイン。免税でテンションを上げろ。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">10:25</div><div><div class="it-tags"><span class="itg ir">🔴 要予約済</span></div><div class="it-h">✈️ 成田（NRT）→ KL 出発</div><div class="it-d">バティック航空 OD873 · エコノミー · 約6.5h。KL T1着 16:55。機内でゆっくり過ごせる。</div></div></div>
+    <div class="it"><div class="it-bar"></div><div class="it-t">16:55</div><div><div class="it-tags"><span class="itg im">🔵 移動</span></div><div class="it-h">✈️ KL T1着 → ホテルへ</div><div class="it-d">KLIA T1着。Grabでホテルへ（約45分）。The Mews KLCCにチェックイン（15:00〜）。夕食後はゆっくり休む。</div></div></div>
   </div>
-</div>
-
-<!-- DAY 2 -->
 <div class="db ccy">
-  <div class="dl"><div class="dn">02</div><div class="dd">5/1 FRI — KL①</div><div class="ds">🏨 KL泊①<br>到着〜観光</div><div class="dv">ARRIVAL · MOSQUE · CASINO</div></div>
+  <div class="dl"><div class="dn">02</div><div class="dd">5/2 SAT — KL①</div><div class="ds">🏨 KL泊①<br>観光スタート</div><div class="dv">MOSQUE · CASINO</div><div class="dh" style="color:var(--cy)"><span class="dh-name">🏨 The Mews KLCC by ALMA</span><div class="dh-row"><div class="dh-item"><span class="dh-lbl">CI</span><span class="dh-val">15:00〜</span></div><div class="dh-item"><span class="dh-lbl">CO</span><span class="dh-val">5/5 11:00</span></div><div class="dh-item"><span class="dh-lbl">確認キー</span><span class="dh-val" style="color:var(--cy)">9139</span></div></div></div></div>
   <div class="dr">
-    <div class="it"><div class="it-bar"></div><div class="it-t">04:20</div><div><div class="it-tags"><span class="itg im">🔵 移動</span></div><div class="it-h">✈️ KL T1着 → ホテルへ</div><div class="it-d">KLIA T1着。Grabでホテルへ（約45分）。荷物預け・シャワー後に仮眠OK。</div></div></div>
+<!-- DAY 2 -->
     <div class="it"><div class="it-bar"></div><div class="it-t">〜11:00</div><div><div class="it-tags"><span class="itg ig">💪 筋トレ</span></div><div class="it-h">💪 ホテルジムで筋トレ</div><div class="it-d">到着後にジムへ。旅行中も成長は止めない。シャワー後に昼食。</div></div></div>
     <div class="it"><div class="it-bar"></div><div class="it-t">12:00〜</div><div><div class="it-tags"><span class="itg if">🟢 自由</span></div><div class="it-h">💙 ブルーモスク（午後セッション）</div><div class="it-d">Grab約20分。14:00〜17:00セッションで余裕を持って訪問。入場無料。ショートパンツ・タンクトップ不可（ガウン貸出あり）。</div></div></div>
     <div class="it"><div class="it-bar"></div><div class="it-t">15:00〜</div><div><div class="it-tags"><span class="itg if">🟢 自由</span></div><div class="it-h ch">【選択肢】ブルーモスク後</div><div class="it-d">▶ 🌸 ピンクモスク（Grab約30分・無料）
@@ -448,7 +364,7 @@ img{display:block;width:100%;height:100%;object-fit:cover;}
 
 <!-- DAY 3 -->
 <div class="db cgd">
-  <div class="dl"><div class="dn">03</div><div class="dd">5/2 SAT — KL②</div><div class="ds">🏨 KL泊②<br>🌕 満月当日!</div><div class="dv">⭐ SKY MIRROR DAY</div></div>
+  <div class="dl"><div class="dn">03</div><div class="dd">5/3 SUN — KL②</div><div class="ds">🏨 KL泊②<br>🌕 満月翌日!</div><div class="dv">⭐ SKY MIRROR DAY</div><div class="dh" style="color:var(--cy)"><span class="dh-name">🏨 The Mews KLCC by ALMA</span><div class="dh-row"><div class="dh-item"><span class="dh-lbl">2泊目</span><span class="dh-val">KLCC徒歩10分</span></div><div class="dh-item"><span class="dh-lbl">確認キー</span><span class="dh-val" style="color:var(--cy)">9139</span></div></div></div></div>
   <div class="dr">
     <div class="it"><div class="it-bar"></div><div class="it-t">05:30〜06:00</div><div><div class="it-tags"><span class="itg ir">🔴 要予約 · 唯一の早起き日</span></div><div class="it-h">⭐ スカイミラー出発 — 今回最大のハイライト</div><div class="it-d">🌕 満月当日（5/2 02:23）！最高のタイミング。RM90（≒¥3,060）/人。KL→クランまで車1.5h。
 前日に出発時刻確定の連絡あり。今すぐ予約 → skymirrortour.com</div></div></div>
@@ -461,7 +377,7 @@ img{display:block;width:100%;height:100%;object-fit:cover;}
 
 <!-- DAY 4 -->
 <div class="db ccy">
-  <div class="dl"><div class="dn">04</div><div class="dd">5/3 SUN — KL③</div><div class="ds">🏨 KL泊③<br>KL自由満喫日</div><div class="dv">KL FREE DAY</div></div>
+  <div class="dl"><div class="dn">04</div><div class="dd">5/4 MON — KL③</div><div class="ds">🏨 KL泊③<br>KL自由満喫日</div><div class="dv">KL FREE DAY</div><div class="dh" style="color:var(--cy)"><span class="dh-name">🏨 The Mews KLCC by ALMA</span><div class="dh-row"><div class="dh-item"><span class="dh-lbl">3泊目</span><span class="dh-val">CO 5/5 11:00</span></div><div class="dh-item"><span class="dh-lbl">確認キー</span><span class="dh-val" style="color:var(--cy)">9139</span></div></div></div></div>
   <div class="dr">
     <div class="it"><div class="it-bar"></div><div class="it-t">〜11:00</div><div><div class="it-tags"><span class="itg ig">💪 筋トレ</span></div><div class="it-h">💪 ホテルジムで筋トレ</div><div class="it-d">朝はゆっくり起床。筋トレ後にシャワー・朝食。12:00から出撃。</div></div></div>
     <div class="it"><div class="it-bar"></div><div class="it-t">12:00〜</div><div><div class="it-tags"><span class="itg if">🟢 自由</span></div><div class="it-h ch">【選択肢A】歴史・文化コース</div><div class="it-d">▶ 🏯 天后宮（Thean Hou Temple）· 中国系6層廟 · Grab約20分 · 入場無料
@@ -477,7 +393,7 @@ img{display:block;width:100%;height:100%;object-fit:cover;}
 
 <!-- DAY 5 -->
 <div class="db cor">
-  <div class="dl"><div class="dn">05</div><div class="dd">5/4 MON — MALACCA</div><div class="ds">🏨 マラッカ泊<br>旧市街近く推奨</div><div class="dv">HERITAGE · SLOW</div></div>
+  <div class="dl"><div class="dn">05</div><div class="dd">5/5 TUE — MALACCA</div><div class="ds">🏨 マラッカ泊<br>旧市街近く推奨</div><div class="dv">HERITAGE · SLOW</div><div class="dh" style="color:var(--or)"><span class="dh-name">🏨 The Lisbon Melaka by Wyndham</span><div class="dh-row"><div class="dh-item"><span class="dh-lbl">CI</span><span class="dh-val">15:00〜21:00</span></div><div class="dh-item"><span class="dh-lbl">CO</span><span class="dh-val">5/6 12:00</span></div><div class="dh-item"><span class="dh-lbl">確認キー</span><span class="dh-val" style="color:var(--or)">7856</span></div></div></div></div>
   <div class="dr">
     <div class="it"><div class="it-bar"></div><div class="it-t">〜11:00</div><div><div class="it-tags"><span class="itg ig">💪 筋トレ</span></div><div class="it-h">💪 KLでラスト筋トレ + チェックアウト</div><div class="it-d">ゆっくり朝食・筋トレ後にチェックアウト。TBSバスターミナルへ移動。</div></div></div>
     <div class="it"><div class="it-bar"></div><div class="it-t">12:00頃</div><div><div class="it-tags"><span class="itg im">🔵 移動</span></div><div class="it-h">🚌 KL → マラッカ（バス約2h）</div><div class="it-d">TBSターミナルからEasybookで予約。RM10〜15（≒¥340〜510）。12:00〜13:00発を狙う。</div></div></div>
@@ -491,7 +407,7 @@ img{display:block;width:100%;height:100%;object-fit:cover;}
 
 <!-- DAY 6 -->
 <div class="db cgn">
-  <div class="dl"><div class="dn">06</div><div class="dd">5/5 TUE — PENANG①</div><div class="ds">🏨 ペナン泊①<br>KL経由→✈ペナン</div><div class="dv">MOVE · GEORGE TOWN</div></div>
+  <div class="dl"><div class="dn">06</div><div class="dd">5/6 WED — PENANG①</div><div class="ds">🏨 ペナン泊①<br>KL経由→✈ペナン</div><div class="dv">MOVE · GEORGE TOWN</div><div class="dh" style="color:var(--gn)"><span class="dh-name">🏨 パークロイヤル ペナン リゾート</span><div class="dh-row"><div class="dh-item"><span class="dh-lbl">CI</span><span class="dh-val">15:00〜</span></div><div class="dh-item"><span class="dh-lbl">CO</span><span class="dh-val">5/8 12:00</span></div><div class="dh-item"><span class="dh-lbl">確認キー</span><span class="dh-val" style="color:var(--gn)">3914</span></div></div></div></div>
   <div class="dr">
     <div class="it"><div class="it-bar"></div><div class="it-t">〜11:00</div><div><div class="it-tags"><span class="itg ig">💪 筋トレ</span></div><div class="it-h">💪 マラッカ最終筋トレ + チェックアウト</div><div class="it-d">見残した場所があれば午前中に立ち寄り。その後バスターミナルへ。</div></div></div>
     <div class="it"><div class="it-bar"></div><div class="it-t">12:00頃</div><div><div class="it-tags"><span class="itg im">🔵 移動</span></div><div class="it-h">🚌 マラッカ → KL（バス2h）→ KLIA2</div><div class="it-d">Easybookで12:00〜13:00発を予約。KL着後そのままKLIA2へ（バス約1h）。</div></div></div>
@@ -502,7 +418,7 @@ img{display:block;width:100%;height:100%;object-fit:cover;}
 
 <!-- DAY 7 -->
 <div class="db cgn">
-  <div class="dl"><div class="dn">07</div><div class="dd">5/6 WED — PENANG②</div><div class="ds">🏨 ペナン泊②<br>ジョージタウン満喫</div><div class="dv">CULTURE · STREET ART</div></div>
+  <div class="dl"><div class="dn">07</div><div class="dd">5/7 THU — PENANG②</div><div class="ds">🏨 ペナン泊②<br>ジョージタウン満喫</div><div class="dv">CULTURE · STREET ART</div><div class="dh" style="color:var(--gn)"><span class="dh-name">🏨 パークロイヤル ペナン リゾート</span><div class="dh-row"><div class="dh-item"><span class="dh-lbl">2泊目</span><span class="dh-val">ビーチ直結 5★</span></div><div class="dh-item"><span class="dh-lbl">確認キー</span><span class="dh-val" style="color:var(--gn)">3914</span></div></div></div></div>
   <div class="dr">
     <div class="it"><div class="it-bar"></div><div class="it-t">〜11:00</div><div><div class="it-tags"><span class="itg ig">💪 筋トレ</span></div><div class="it-h">💪 ホテルジムで筋トレ</div><div class="it-d">朝はゆっくり起床。筋トレ後にシャワー・朝食。12:00から出撃。</div></div></div>
     <div class="it"><div class="it-bar"></div><div class="it-t">12:00〜</div><div><div class="it-tags"><span class="itg if">🟢 自由</span></div><div class="it-h">🏛 ジョージタウン — 丸1日歩き倒せ</div><div class="it-d">UNESCO世界遺産の旧市街を徒歩で探索。ストリートアート・コーンウォリス要塞（RM20）・ペナンヒル（RM30）。</div></div></div>
@@ -513,7 +429,7 @@ img{display:block;width:100%;height:100%;object-fit:cover;}
 
 <!-- DAY 8 -->
 <div class="db coc">
-  <div class="dl"><div class="dn">08</div><div class="dd">5/7 THU — RESORT + 帰国</div><div class="ds">🌴 リゾートday<br>夜 ペナン→KL→成田</div><div class="dv">🌴 RESORT → HOMEBOUND</div></div>
+  <div class="dl"><div class="dn">08</div><div class="dd">5/8 FRI — RESORT + 帰国</div><div class="ds">🌴 リゾートday<br>夜 ペナン→KL→成田</div><div class="dv">🌴 RESORT → HOMEBOUND</div><div class="dh" style="color:var(--gn)"><span class="dh-name">🏨 パークロイヤル ペナン リゾート</span><div class="dh-row"><div class="dh-item"><span class="dh-lbl">CO</span><span class="dh-val">12:00まで</span></div><div class="dh-item"><span class="dh-lbl">荷物</span><span class="dh-val">フロント預け可</span></div></div></div></div>
   <div class="dr">
     <div class="it"><div class="it-bar"></div><div class="it-t">〜11:00</div><div><div class="it-tags"><span class="itg ig">💪 筋トレ</span></div><div class="it-h">💪 最後の筋トレ + チェックアウト準備</div><div class="it-d">朝ゆっくり起床・ジム・シャワー。荷物をまとめてフロントへ預ける。</div></div></div>
     <div class="it"><div class="it-bar"></div><div class="it-t">12:00〜</div><div><div class="it-tags"><span class="itg io">🌴 リゾート</span></div><div class="it-h">🏖 バトゥフェリンギビーチへ — Grab約30分</div><div class="it-d">ペナン最大のリゾートビーチ。到着後はそのままビーチへ直行。</div></div></div>
@@ -531,7 +447,7 @@ img{display:block;width:100%;height:100%;object-fit:cover;}
 
 <!-- DAY 9 -->
 <div class="db cpk">
-  <div class="dl"><div class="dn">09</div><div class="dd">5/8 FRI — 帰国</div><div class="ds">🏠 成田着</div><div class="dv">MISSION COMPLETE</div></div>
+  <div class="dl"><div class="dn">09</div><div class="dd">5/9 SAT — 帰国</div><div class="ds">🏠 成田着</div><div class="dv">MISSION COMPLETE</div></div>
   <div class="dr">
     <div class="it"><div class="it-bar"></div><div class="it-t">07:40</div><div><div class="it-tags"><span class="itg im">🔵 着陸</span></div><div class="it-h">✈️ 成田（NRT）T2 着 — 革命の帰還</div><div class="it-d">お疲れ様でした。7泊8日・13か所・4人の革命。成田着後は解散。次の冒険まで英気を養え。</div></div></div>
   </div>
@@ -598,7 +514,7 @@ img{display:block;width:100%;height:100%;object-fit:cover;}
     <table class="tbl">
       <thead><tr><th>区間</th><th>便名・手段</th><th>日時</th><th>RM/¥目安</th><th>備考</th></tr></thead>
       <tbody>
-        <tr><td>成田 T2 → KL T1</td><td class="tap">バティック航空 OD871</td><td>4/30 21:50 → 5/1 04:20</td><td class="trm">—</td><td>trip.com予約済</td></tr>
+        <tr><td>成田 T2 → KL T1</td><td class="tap">バティック航空 OD873</td><td>5/1 10:25 → 5/1 16:55</td><td class="trm">—</td><td>trip.com予約済（変更後）</td></tr>
         <tr><td>KL市内全般</td><td class="tap">Grab</td><td>随時</td><td class="trm">RM5〜25/台</td><td class="tjy">4人割り勘で超安</td></tr>
         <tr><td>KL → スカイミラー</td><td class="tap">skymirrortour.com</td><td>5/2 早朝</td><td class="trm">RM90/人</td><td>今すぐ予約！</td></tr>
         <tr><td>KL → ゲンティン</td><td class="tap">Grab</td><td>5/1 夕方</td><td class="trm">RM30〜60/台</td><td class="tjy">約1h</td></tr>
@@ -626,10 +542,91 @@ img{display:block;width:100%;height:100%;object-fit:cover;}
   <div class="bgrid">
     <div class="bc bpk"><div class="bc-lb">✈ 国際線往復 4人合計</div><div class="bc-v">¥631,880</div><div class="bc-s">trip.com · 1人約¥157,970</div></div>
     <div class="bc bcy"><div class="bc-lb">✈ 国内線2便（往復）込み</div><div class="bc-v">上記に含む</div><div class="bc-s">AK9134 + OD2107</div></div>
-    <div class="bc bgn"><div class="bc-lb">🏨 宿泊（7泊）</div><div class="bc-v">¥2,700〜6,800/泊</div><div class="bc-s">4人1室で割り勘最安</div></div>
-    <div class="bc bgd"><div class="bc-lb">🌊 スカイミラー</div><div class="bc-v">¥3,060/人</div><div class="bc-s">RM90 · 今すぐ予約！</div></div>
+    <div class="bc bgn"><div class="bc-lb">🏨 宿泊（7泊）合計</div><div class="bc-v">¥262,130</div><div class="bc-s">KL3泊＋マラッカ1泊＋ペナン2泊</div></div>
+    <div class="bc bgd"><div class="bc-lb">🌊 スカイミラー</div><div class="bc-v">¥3,060/人</div><div class="bc-s">RM90 · 予約済！</div></div>
     <div class="bc bor"><div class="bc-lb">🚕 Grab・バス・入場料等</div><div class="bc-v">¥5,000〜8,500</div><div class="bc-s">4人割り勘でさらに圧縮</div></div>
-    <div class="bc btot"><div class="bc-lb">💰 現地費用目安（国際線除く）</div><div class="bc-v">¥2〜3万</div><div class="bc-s">航空券込みで1人¥18〜20万が目安</div></div>
+    <div class="bc btot"><div class="bc-lb">💰 航空券＋ホテル合計（4人）</div><div class="bc-v">約100万円</div><div class="bc-s">1人あたり約¥25万</div></div>
+  </div>
+</div>
+</div>
+
+<div class="ndiv"></div>
+
+<!-- ═══ HOTELS ═══ -->
+<div class="sec">
+<div class="si">
+  <div class="shd">
+    <div class="shd-n">07</div>
+    <div><div class="shd-lbl" style="color:var(--cy)">HOTELS</div><div class="shd-title">予約済みホテル — 全3軒</div></div>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:3px;">
+
+    <!-- KL -->
+    <div style="background:rgba(255,255,255,.03);border:1px solid rgba(0,245,255,.2);border-radius:var(--border-radius-lg,12px);overflow:hidden;">
+      <div style="background:rgba(0,245,255,.06);padding:clamp(12px,2vw,18px) clamp(14px,2.5vw,22px);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+        <div>
+          <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--cy);margin-bottom:4px;">🏙 KUALA LUMPUR · 5/1〜5/4 · 3泊</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(18px,3vw,24px);letter-spacing:2px;color:#fff;">The Mews KLCC Kuala Lumpur by ALMA</div>
+          <div style="font-size:clamp(10px,1.5vw,12px);color:var(--mu);margin-top:3px;">No.19, Jalan Yap Kwan Seng, 50450 クアラルンプール &nbsp;|&nbsp; +60-123370237</div>
+        </div>
+        <div style="text-align:right;flex-shrink:0;">
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(22px,4vw,32px);color:var(--cy);">¥133,341</div>
+          <div style="font-size:10px;font-family:'DM Mono',monospace;color:#ff7070;margin-top:2px;">キャンセル不可</div>
+        </div>
+      </div>
+      <div style="padding:clamp(10px,1.5vw,14px) clamp(14px,2.5vw,22px);display:flex;flex-wrap:wrap;gap:clamp(12px,2vw,24px);font-size:clamp(10px,1.5vw,12px);">
+        <div><span style="color:var(--mu);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;">チェックイン</span><br><span style="color:#fff;font-weight:700;">5/1（金）15:00〜</span></div>
+        <div><span style="color:var(--mu);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;">チェックアウト</span><br><span style="color:#fff;font-weight:700;">5/4（月）11:00まで</span></div>
+        <div><span style="color:var(--mu);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;">予約番号</span><br><span style="color:var(--cy);font-family:'DM Mono',monospace;">1385431453857556</span></div>
+        <div><span style="color:var(--mu);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;">確認キー</span><br><span style="color:var(--cy);font-family:'DM Mono',monospace;">9139</span></div>
+        <div><span style="color:var(--mu);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;">特徴</span><br><span style="color:#fff;">プール付き · KLCC徒歩10分</span></div>
+      </div>
+    </div>
+
+    <!-- マラッカ -->
+    <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,107,0,.2);border-radius:var(--border-radius-lg,12px);overflow:hidden;">
+      <div style="background:rgba(255,107,0,.06);padding:clamp(12px,2vw,18px) clamp(14px,2.5vw,22px);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+        <div>
+          <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--or);margin-bottom:4px;">🕌 MALACCA · 5/4〜5/5 · 1泊</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(18px,3vw,24px);letter-spacing:2px;color:#fff;">The Lisbon Melaka, Trademark Collection by Wyndham</div>
+          <div style="font-size:clamp(10px,1.5vw,12px);color:var(--mu);margin-top:3px;">20, Jalan D'Albuquerque, 75050 ムラカ &nbsp;|&nbsp; +60-6-2829888</div>
+        </div>
+        <div style="text-align:right;flex-shrink:0;">
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(22px,4vw,32px);color:var(--or);">¥25,621</div>
+          <div style="font-size:10px;font-family:'DM Mono',monospace;color:#ff7070;margin-top:2px;">キャンセル不可</div>
+        </div>
+      </div>
+      <div style="padding:clamp(10px,1.5vw,14px) clamp(14px,2.5vw,22px);display:flex;flex-wrap:wrap;gap:clamp(12px,2vw,24px);font-size:clamp(10px,1.5vw,12px);">
+        <div><span style="color:var(--mu);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;">チェックイン</span><br><span style="color:#fff;font-weight:700;">5/4（月）15:00〜21:00</span></div>
+        <div><span style="color:var(--mu);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;">チェックアウト</span><br><span style="color:#fff;font-weight:700;">5/5（火）11:00〜12:00</span></div>
+        <div><span style="color:var(--mu);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;">予約番号</span><br><span style="color:var(--or);font-family:'DM Mono',monospace;">1385431453732428</span></div>
+        <div><span style="color:var(--mu);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;">確認キー</span><br><span style="color:var(--or);font-family:'DM Mono',monospace;">7856</span></div>
+        <div><span style="color:var(--mu);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;">特徴</span><br><span style="color:#fff;">旧市街エリア · 4★</span></div>
+      </div>
+    </div>
+
+    <!-- ペナン -->
+    <div style="background:rgba(255,255,255,.03);border:1px solid rgba(57,255,20,.2);border-radius:var(--border-radius-lg,12px);overflow:hidden;">
+      <div style="background:rgba(57,255,20,.05);padding:clamp(12px,2vw,18px) clamp(14px,2.5vw,22px);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+        <div>
+          <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--gn);margin-bottom:4px;">🏖 PENANG · 5/5〜5/7 · 2泊</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(18px,3vw,24px);letter-spacing:2px;color:#fff;">パークロイヤル ペナン リゾート</div>
+          <div style="font-size:clamp(10px,1.5vw,12px);color:var(--mu);margin-top:3px;">Batu Ferringhi Beach, 11100 バトゥ・フェリンギ, ペナン州 &nbsp;|&nbsp; +60-4-8862288</div>
+        </div>
+        <div style="text-align:right;flex-shrink:0;">
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(22px,4vw,32px);color:var(--gn);">¥103,168</div>
+          <div style="font-size:10px;font-family:'DM Mono',monospace;color:var(--gn);margin-top:2px;">5/2 23:59まで無料キャンセル</div>
+        </div>
+      </div>
+      <div style="padding:clamp(10px,1.5vw,14px) clamp(14px,2.5vw,22px);display:flex;flex-wrap:wrap;gap:clamp(12px,2vw,24px);font-size:clamp(10px,1.5vw,12px);">
+        <div><span style="color:var(--mu);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;">チェックイン</span><br><span style="color:#fff;font-weight:700;">5/5（火）15:00〜</span></div>
+        <div><span style="color:var(--mu);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;">チェックアウト</span><br><span style="color:#fff;font-weight:700;">5/7（木）12:00まで</span></div>
+        <div><span style="color:var(--mu);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;">予約番号</span><br><span style="color:var(--gn);font-family:'DM Mono',monospace;">1385431453660731</span></div>
+        <div><span style="color:var(--mu);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;">確認キー</span><br><span style="color:var(--gn);font-family:'DM Mono',monospace;">3914</span></div>
+        <div><span style="color:var(--mu);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;">特徴</span><br><span style="color:#fff;">ビーチ直結 · 5★リゾート</span></div>
+      </div>
+    </div>
+
   </div>
 </div>
 </div>
@@ -640,11 +637,10 @@ img{display:block;width:100%;height:100%;object-fit:cover;}
 <div class="sec alt">
 <div class="si">
   <div class="shd">
-    <div class="shd-n">07</div>
+    <div class="shd-n">08</div>
     <div><div class="shd-lbl" style="color:var(--pk)">IMPORTANT</div><div class="shd-title">注意事項 ＆ 今すぐやること</div></div>
   </div>
   <div class="notes">
-    <div class="note nu"><span class="n-badge">🔴 今すぐ</span><span class="n-txt"><strong>スカイミラー予約</strong> → <strong>skymirrortour.com</strong>（RM90/人≒¥3,060）。5/2が🌕満月当日で最高。枠がすぐ埋まる。+60 10-509 1007</span></div>
     <div class="note nu"><span class="n-badge">🔴 今すぐ</span><span class="n-txt">trip.comで予約した<strong>4フライトの予約確認メール</strong>を全員で共有。搭乗券はAirAsia / Batik Airアプリに入れておく。</span></div>
     <div class="note nu"><span class="n-badge">🔴 今すぐ</span><span class="n-txt"><strong>マレーシア入国 デジタルアライバルカード</strong>の登録が必要。入国3日前から登録可能。忘れると搭乗拒否される。</span></div>
     <div class="note nw"><span class="n-badge">🟡 注意</span><span class="n-txt">成田T2発・KL T1着・KL T1発のルートに注意。KL国内線はKLIA2発。<strong>T1とT2は別ターミナル</strong>（シャトル約15分）。</span></div>
@@ -663,7 +659,7 @@ img{display:block;width:100%;height:100%;object-fit:cover;}
 <!-- ═══ FOOTER ═══ -->
 <div class="footer">
   <div class="footer-t">貧困男爵 in マレーシア — 革命の灯火</div>
-  <div class="footer-s">4/30 成田 → 5/8 成田 &nbsp;|&nbsp; 4 MEN · 7 NIGHTS &nbsp;|&nbsp; OD871 · AK9134 · OD2107 · MH088 &nbsp;|&nbsp; 💪 午前は筋トレ &nbsp;|&nbsp; 🟢 自由に生きろ</div>
+  <div class="footer-s">5/1 成田 → 5/9 成田 &nbsp;|&nbsp; 4 MEN · 7 NIGHTS &nbsp;|&nbsp; OD873 · AK9134 · OD2107 · MH088 &nbsp;|&nbsp; 💪 午前は筋トレ &nbsp;|&nbsp; 🟢 自由に生きろ</div>
 </div>
 
 </body>
